@@ -13,18 +13,10 @@
   font-weight: normal;
   font-style: normal;
 }
-/*
-
-font-family: 'Lato', sans-serif;
-font-family: 'Playfair Display', serif;
-
-*/
 
 /*------------------*/
 /* Basic Code Shell */
 /*------------------*/
-
-
 
 * {
   box-sizing: border-box;
@@ -33,12 +25,10 @@ font-family: 'Playfair Display', serif;
 /* Optional min width */
 html {
   min-width: 20rem;
-  height: 100%;
 }
 
 body {
   font-size: 1.125rem;
-  height: 100%;
 }
 
 img {
@@ -57,8 +47,136 @@ a:active {
   text-decoration: none;
 }
 
+/*-------*/
+/* Fonts */
+/*-------*/
 
-header .strip-parent { 
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+}
+
+.button{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.para-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 48px;
+  font-style: italic;
+}
+
+.date{
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0.2em;
+}
+
+.side-header{
+  font-family: 'Playfair Display', serif;
+  font-size: 96px;
+  line-height: 192px;
+  letter-spacing: 0.8em;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 192px;
+  letter-spacing: 0.8em;  
+}
+
+.special-para{
+  color: #6e7991;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 96px;
+  text-align: center;
+}
+
+.special-para span{
+  color: #fff;
+}
+
+.speakers h1{
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 64px;
+  line-height: 96px;  
+}
+
+.speakers p{
+    font-family: 'Lato', sans-serif;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.speakers li{
+    font-family: "SSSocialRegular";
+    color: #333;
+    list-style-type: none;
+}
+
+.ss-social-regular{
+    font-family: "SSSocialRegular";
+    color: #333;
+    line-height: 48px;
+}
+
+.navmenu h1{
+      font-family: 'Lato', sans-serif;
+      font-size: 20px;
+      line-height: 48px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+}
+
+/*-------------------*/
+/* Overall Structure */
+/*-------------------*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.wrap {
+  max-width: 75rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*-----*/
+/* Nav */
+/*-----*/
+
+
+/*--------------*/
+/* Main Content */
+/*--------------*/
+
+
+/*--------*/
+/* Stripe */
+/*--------*/
+
+/*header .strip-parent { 
   background: #67e6ec;
   height: 100%;
   position: relative;
@@ -81,153 +199,4 @@ header .strip-parent > .strip > .bg-img {
   text-align: center;
   transform: skew(-20deg);
 }
-
-
-
-
-
-/*-------*/
-/* Fonts */
-/*-------*/
-
-
-p{
-  font-family: 'Lato', sans-serif;
-  font-size: 32px;
-  line-height: 48px;
-}
-
-h2 .button{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 48px;
-  letter-spacing: 0.3em;
-  text-transform: uppercase;
-}
-
-.para-playfair-header{
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 48px;
-  font-style: italic;
-}
-
-.date p{
-  font-family: 'Lato', sans-serif;
-  font-size: 32px;
-  line-height: 48px;
-  letter-spacing: 0.2em;
-}
-
-.huge-title h1{
-  font-family: 'Playfair Display', serif;
-  font-size: 96px;
-  line-height: 192px;
-  letter-spacing: 0.8em;
-}
-
-.center-title h1{
-  font-family: 'Playfair Display', serif;
-  line-height: 192px;
-  letter-spacing: 0.8em;  
-}
-
-.medievil-text{
-  color: #6e7991;
-  font-family: 'Playfair Display', serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 96px;
-}
-
-.medievil-text span{
-  color: #fff;
-}
-
-.speakers h1{
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 64px;
-  line-height: 96px;  
-}
-
-.speakers p{
-    font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    line-height: 48px;
-}
-
-.ss-social-regular{
-    font-family: "SSSocialRegular";
-    color: #333;
-    line-height: 48px;
-}
-
-.navmenu h1{
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      line-height: 48px;
-      letter-spacing: 0.3em;
-}
-
-
-
-/*--------*/
-/* Stripe */
-/*--------*/
-
-
-
-/*h1, h2, h3, h4, h5, h6 {
-  line-height: 1.313em;
-}
-
-h1 {
-  font-size: 3em;
-  margin: 0.563em 0;
-}
-
-h2 {
-  font-size: 2.25em;
-  margin: 0.625em 0;
-}
-
-h3 {
-  font-size: 1.5em;
-  margin: 1.313em 0;
-}
-
-h4 {
-  font-size: 1.313em;
-  margin: 1.313em 0;
-}
-
-h5 {
-  font-size: 1.125em;
-  margin: 1.313em 0;
-}
-
-h6 {
-  font-size: 1em;
-  margin: 0.75em 0;
-}*/
-
-.clearfix:before,
-.clearfix:after {
-  content: " ";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-
-.hidden {
-  display: none !important;
-}
-
-.wrap {
-  max-width: 75rem;
-  width: 100%;
-  margin: 0 auto;
-}
-
+*/
