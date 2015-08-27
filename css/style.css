@@ -86,7 +86,7 @@ p{
   letter-spacing: 0.8em;
 }
 
-h1{
+h2{
   font-family: 'Playfair Display', serif;
   font-size: 48px;
   line-height: 192px;
@@ -106,7 +106,7 @@ h1{
   color: #fff;
 }
 
-.speakers h1{
+.speakers h2{
   font-family: 'Playfair Display', serif;
   font-style: italic;
   font-size: 64px;
@@ -131,7 +131,7 @@ h1{
     line-height: 48px;
 }
 
-.navmenu h1{
+.navmenu h2{
       font-family: 'Lato', sans-serif;
       font-size: 20px;
       line-height: 48px;
@@ -171,6 +171,11 @@ h1{
 /* Main Content */
 /*--------------*/
 
+
+footer{
+
+  background: blue;
+}
 
 /*--------*/
 /* Stripe */
