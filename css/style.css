@@ -2,7 +2,7 @@
 /* Import/Font-face */
 /*------------------*/
 
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700|Playfair+Display:700,400,400italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:300,400,700|Playfair+Display:700,400,400italic);
 @font-face {
   font-family: "SSSocialRegular";
   src: url('../webfonts/ss-social-regular.eot');
@@ -29,6 +29,8 @@ html {
 
 body {
   font-size: 1.125rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 img {
@@ -51,54 +53,145 @@ a:active {
 /* Fonts */
 /*-------*/
 
+h1{
+  font-family: 'Lato', sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  width: 453px;
+}
+
 p{
   font-family: 'Lato', sans-serif;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .button{
+  width: 257px;
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 48px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
+  display: block;
+  background-color: #2d323e;
+  padding: 26px;
+  list-style-type: none;
+  position: relative;
+}
+
+.button a, a.button{
+    color: white;
+}
+
+.button img{
+  width: 14px;
+  position: absolute;
+  top: 30.25px;
+  left: 216px;
+}
+
+.navicon a{
+  color: white;
+}
+
+li.navmenu{
+    list-style-type: none;
+}
+
+.navmenu span{
+      font-family: 'Lato', sans-serif;
+      font-size: 10px;
+      line-height: 24px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      font-weight: 700;
 }
 
 .para-title{
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 24px;
+  line-height: 24px;
   font-style: italic;
 }
 
 .date{
   font-family: 'Lato', sans-serif;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: 0.2em;
+  font-weight: 400;
 }
 
 .side-header{
+  width: 521px;
+  margin-right: 125px;
   font-family: 'Playfair Display', serif;
-  font-size: 96px;
-  line-height: 192px;
+  font-size: 48px;
+  line-height: 96px;
   letter-spacing: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+
+}
+
+.para-side h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: initial;
 }
 
 h2{
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 192px;
+  font-size: 24px;
+  line-height: 96px;
   letter-spacing: 0.8em;  
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 400;
+}
+
+  nav li a{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.8em;  
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 400;
+  }
+
+  nav li a{
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.8em;  
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 400;
+  padding-bottom: 12px;
+
+  }
+
+nav li a:active{
+  border-bottom: 2px solid #000;
 }
 
 .special-para{
+  width: 800px;
   color: #6e7991;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 64px;
-  line-height: 96px;
+  font-size: 32px;
+  line-height: 48px;
   text-align: center;
 }
 
@@ -106,17 +199,27 @@ h2{
   color: #fff;
 }
 
-.speakers h2{
+.speaker-block h2{
+  color: #333;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 64px;
-  line-height: 96px;  
+  font-size: 24px;
+  line-height: 48px;  
+  letter-spacing: 0;
+  text-transform: initial;
 }
 
-.speakers p{
+.speaker-block p{
+    color: #333;
+    width: 305px;
     font-family: 'Lato', sans-serif;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+}
+
+.speakers img{
+  width: 328px;
 }
 
 .speakers li{
@@ -127,17 +230,130 @@ h2{
 
 .ss-social-regular{
     font-family: "SSSocialRegular";
+    font-size: 16px;
+    line-height: 24px;
     color: #333;
-    line-height: 48px;
 }
 
-.navmenu h2{
-      font-family: 'Lato', sans-serif;
-      font-size: 20px;
-      line-height: 48px;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
+.venue-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 48px;
+  letter-spacing: 0.3em;
+  font-weight: 400;
+  color: #333;
+  text-transform: uppercase;
 }
+
+.venue .address{
+  color: #333;
+  font-family: 'Lato', sans-serif;
+  font-size: 24px;
+  line-height: 48px;
+}
+
+.partner-img img:nth-child(1){
+  width: 192px;
+}
+
+.partner-img img:nth-child(2){
+  width: 174px;
+}
+
+footer img{
+  width: 90px;
+}
+
+footer h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.8em;
+  text-align: center;
+}
+
+.subscribe h2{
+  color: #fff;
+}
+
+.subscribe p{
+  width: 546px;
+  color: #fff;
+  text-align: center;
+}
+
+.subscribe form input{
+  width: 546px;
+  border: 0;
+  background-color: #2d323e;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 48px;
+  font-size: 32px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 118px;
+}
+
+[placeholder]:focus::-webkit-input-placeholder {
+  transition: opacity 0.2s 0.2s ease; 
+  opacity: 0;
+}
+
+invalid {
+  box-shadow: none;
+}
+
+:-moz-submit-invalid {
+  box-shadow: none;
+}
+
+:-moz-ui-invalid {
+  box-shadow:none;
+}
+
+  ::-webkit-input-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 32px;
+  text-align: center;
+  }
+
+:-moz-placeholder { /* Firefox 18- */
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 48px;
+  font-size: 32px;
+  text-align: center;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 48px;
+  font-size: 32px;
+  text-align: center;
+}
+
+:-ms-input-placeholder {  
+font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  padding: 48px;
+  font-size: 32px;
+  text-align: center;
+}
+
+
+textarea, input { 
+  outline: none; 
+}
+
 
 /*-------------------*/
 /* Overall Structure */
@@ -171,10 +387,20 @@ h2{
 /* Main Content */
 /*--------------*/
 
+.logo-title img{
+  width: 424px;
+}
 
-footer{
+.why-trend img{
+  width: 170px;
+}
 
-  background: blue;
+.venue img{
+  width: 1000px;
+}
+
+.subscribe{
+  background-color: #2d323e;
 }
 
 /*--------*/
