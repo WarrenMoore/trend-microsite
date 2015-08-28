@@ -165,20 +165,10 @@ h2{
   line-height: 40px;
   letter-spacing: 0.8em;  
   text-transform: uppercase;
-  color: #333;
-  font-weight: 400;
-  }
-
-  nav li a{
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  line-height: 40px;
-  letter-spacing: 0.8em;  
-  text-transform: uppercase;
   color: #000;
   font-weight: 400;
+  list-style-type: none;
   padding-bottom: 12px;
-
   }
 
 nav li a:active{
@@ -389,6 +379,48 @@ textarea, input {
 
 .logo-title img{
   width: 424px;
+}
+
+.nav-block-1, .nav-block-2, .nav-block-3{
+  float: left;
+  height: 72px;
+}
+
+.nav-block-1{
+  width: 27.955082742%;
+  background-color: #2d323e;
+}
+
+.nav-block-1 > img{
+    width: 150px;
+    margin: 17px 0;
+}
+.nav-block-2{
+  width: 45.803782506%;
+  background-color: #424752;
+}
+
+.nav-block-2 a{
+  font-family: 'Lato', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #fff;
+    letter-spacing: 0.3em;
+   vertical-align: middle;
+    margin-top: 17px;
+    display: inline-block;
+
+}
+
+.nav-block-3{
+  width: 26.241134752%;
+  background-color: #2d323e;
+}
+
+.on-scroll .button{
+  float: left;
 }
 
 .why-trend img{
