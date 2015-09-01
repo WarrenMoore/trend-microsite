@@ -161,7 +161,7 @@ nav li a:active{
 
 .logo-title img{
   width: 424px;
-  margin: 269px 0 40px 0;
+  margin: 22% 0 40px 0;
 }
 
 .show > .navmenu > a{
@@ -177,6 +177,14 @@ nav li a:active{
 
 .on-scroll{
   background-color: #2d323e;
+}
+
+.on-scroll{
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+    opacity: 0.9;
+    top: 0;
 }
 
 .nav-block-1{
@@ -207,7 +215,6 @@ nav li a:active{
   vertical-align: middle;
   padding-top: 17px;
   display: inline-block;
-  width: 100%;
   height: 100%;
 }
 
@@ -226,6 +233,8 @@ nav li a:active{
   margin-top: 12px;
   line-height: 39px;
   position: relative;
+  left: -2px;
+  top: 1px;
 }
 
 .nav-block-3 .navicon a{
@@ -236,11 +245,11 @@ nav li a:active{
     padding-bottom: 0;
 }
 
-.nav-block-3 .fa-navicon{
+.nav-block-3 .fa-navicon {
     position: absolute;
-    top: 12px;
-    left: 78px;
-    font-size: 24px;
+    top: 11px;
+    left: 64px;
+    font-size: 20px;
     width: 20px;
 }
 
@@ -447,6 +456,7 @@ header .button{
     float: left;
     width: 25%;
 }
+
 
 /*News Styles*/
 
@@ -682,6 +692,7 @@ textarea, input {
 header .strip-parent { 
   height: 100%;
   position: relative;
+  left: 6%;
   z-index: 12;
   float: left;
   max-width: 400px;
@@ -693,7 +704,7 @@ header .strip-parent > .strip {
   position: absolute;
   z-index: 100;
   transform: skew(20deg);
-  width: 400px ; 
+  width: 600px ; 
 }
 header .strip-parent > .strip > .bg-img {
 background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282d38+0,7db9e8+100&amp;1+0,0+100 */
@@ -704,6 +715,55 @@ background: -o-linear-gradient(top,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100
 background: -ms-linear-gradient(top,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
 background: linear-gradient(to bottom,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+  color: #fff;
+  height: 100%;
+  left: -109.5px;
+  position: absolute;
+  text-align: center;
+  transform: skew(-20deg);
+}
+
+
+
+.venue{
+  background-color: aliceblue;
+  padding-bottom: 254px;
+  position: relative;
+}
+
+
+.venue .bg-strip{
+  position: absolute;
+  z-index: 2000;
+  height: 100%;
+  width: 100%;
+  left: 56%;
+}
+
+
+.venue .bg-strip .strip-parent { 
+  height: 100%;
+  position: relative;
+  left: 6%;
+  z-index: 12;
+  float: left;
+  max-width: 400px;
+}
+.venue .bg-strip .strip-parent > .strip { 
+  background: rgba(0,0,0,0);
+  height: 100%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 100;
+  transform: skew(20deg);
+  width: 600px ; 
+}
+.venue .bg-strip .strip-parent > .strip > .bg-img {
+  background: url(../img/full/layer13.png) no-repeat center center fixed;
+-webkit-box-shadow: inset 11px 13px 27px -21px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 11px 13px 27px -21px rgba(0,0,0,0.75);
+box-shadow: inset 11px 13px 27px -21px rgba(0,0,0,0.75);
+  background-size: cover;
   color: #fff;
   height: 100%;
   left: -109.5px;
