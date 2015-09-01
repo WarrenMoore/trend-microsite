@@ -68,6 +68,18 @@ p{
   line-height: 24px;
 }
 
+h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 96px;
+  letter-spacing: 0.8em;  
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 400;
+}
+
+/*Button Styles*/
+
 .button{
   width: 257px;
   font-family: 'Playfair Display', serif;
@@ -95,12 +107,22 @@ p{
   left: 216px;
 }
 
+/*-----*/
+/* Nav */
+/*-----*/
+/*Navigation Bar Styles*/
+
 .navicon a{
   color: white;
 }
 
 li.navmenu{
     list-style-type: none;
+}
+
+.navmenu li{
+  list-style-type: none;
+  text-align: center;
 }
 
 .navmenu span{
@@ -112,54 +134,7 @@ li.navmenu{
       font-weight: 700;
 }
 
-.para-title{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-style: italic;
-}
-
-.date{
-  font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.2em;
-  font-weight: 400;
-}
-
-.side-header{
-  width: 521px;
-  margin-right: 125px;
-  font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 96px;
-  letter-spacing: 0.8em;
-  text-transform: uppercase;
-  font-weight: 400;
-
-}
-
-.para-side h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 24px;
-  font-weight: 400;
-  font-style: italic;
-  letter-spacing: 0;
-  text-transform: initial;
-}
-
-h2{
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 96px;
-  letter-spacing: 0.8em;  
-  text-transform: uppercase;
-  color: #333;
-  font-weight: 400;
-}
-
-  nav li a{
+nav li a{
   font-family: 'Playfair Display', serif;
   font-size: 20px;
   line-height: 40px;
@@ -175,6 +150,186 @@ nav li a:active{
   border-bottom: 2px solid #000;
 }
 
+.closed{
+  float: right;
+}
+
+.logo-title{
+  position: relative;
+  z-index: 100;
+}
+
+.logo-title img{
+  width: 424px;
+  margin: 269px 0 40px 0;
+}
+
+.show > .navmenu > a{
+    position: relative;
+    z-index: 110;
+    top: 13px;
+    left: -19px;}
+
+.nav-block-1, .nav-block-2, .nav-block-3{
+  float: left;
+  height: 72px;
+}
+
+.on-scroll{
+  background-color: #2d323e;
+}
+
+.nav-block-1{
+  width: 27.955082742%;
+  background-color: #2d323e;
+  text-align: right;
+}
+
+.nav-block-1 > a >img{
+    width: 150px;
+    margin: 17px 0;
+    margin-right: 50px;
+}
+.nav-block-2{
+  width: 45.803782506%;
+  background-color: #424752;
+  text-align: center;
+}
+
+.nav-block-2 a{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 39px;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.3em;
+  vertical-align: middle;
+  padding-top: 17px;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.nav-block-3 a:active{
+  border: 0;
+}
+
+
+.nav-block-3{
+  width: 26.241134752%;
+  background-color: #2d323e;
+}
+
+.nav-block-3 li.navmenu{
+  margin-left: 61px;
+  margin-top: 12px;
+  line-height: 39px;
+  position: relative;
+}
+
+.nav-block-3 .navicon a{
+    color: white;
+    display: inline-block;
+    width: 114px;
+    height: 48px;
+    padding-bottom: 0;
+}
+
+.nav-block-3 .fa-navicon{
+    position: absolute;
+    top: 12px;
+    left: 78px;
+    font-size: 24px;
+    width: 20px;
+}
+
+.fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+    content: "\f0c9";
+    top: 3px;
+    left: 6px;
+    position: relative;
+
+    }
+
+.nav-block-3 .fa-navicon:before{
+  width: 20px;
+}
+
+/*Header Section Styles*/
+header{
+  background-image: url(../img/top-background.png);
+  height: 100vh;
+  background-size: cover;
+}
+
+header p{
+  color: white;
+  width: 410px;
+  margin-bottom: 31px;
+}
+
+header .button{
+  color: #2d323e;
+  background-color: white;
+}
+
+/*Next Event Section Styles*/
+
+.para-title{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-style: italic;
+}
+
+
+.date{
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 400;
+}
+
+.next-event{
+  margin-top: 141.08px;
+  padding-bottom: 486px;
+}
+
+.side-header{
+  width: 521px;
+  margin: 0;
+  margin-right: 125px;
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+  line-height: 96px;
+  letter-spacing: 0.8em;
+  text-transform: uppercase;
+  font-weight: 400;
+  float: left;
+}
+
+.para-side{
+  width: 527px;
+  text-align: left;
+  float: left;
+}
+
+.para-side h2{
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0;
+  text-transform: initial;
+}
+
+.para-side .button{
+  margin-top: 47px;
+}
+
 .special-para{
   width: 800px;
   color: #6e7991;
@@ -183,29 +338,19 @@ nav li a:active{
   font-size: 32px;
   line-height: 48px;
   text-align: center;
+  margin: 0 auto;
+  margin-top: 80.08px;
+  padding-bottom: 138px;
 }
 
 .special-para span{
   color: #fff;
 }
 
-.speaker-block h2{
-  color: #333;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 24px;
-  line-height: 48px;  
-  letter-spacing: 0;
-  text-transform: initial;
-}
+/*Speakers Styles*/
 
-.speaker-block p{
-    color: #333;
-    width: 305px;
-    font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
+.speakers{
+  padding-bottom: 194px;
 }
 
 .speakers img{
@@ -216,7 +361,49 @@ nav li a:active{
     font-family: "SSSocialRegular";
     color: #333;
     list-style-type: none;
+    display: inline-block;
+    margin-right: 27px;
 }
+
+.speakers li:last-child{
+  margin-right: 0;
+}
+
+.speakers h2:first-child{
+  text-align: center;
+}
+
+.speaker-block h2{
+  color: #333;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 48px;  
+  letter-spacing: 0;
+  text-transform: initial;
+  text-align: center;
+}
+
+.speaker-block p{
+  color: #333;
+  width: 100%;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.speaker-block{
+  float: left;
+  width: 27.333333333%;
+  margin-right: 9%;
+  text-align: center;
+}
+
+.speaker-block:last-child{
+  margin-right: 0;
+}
+
 
 .ss-social-regular{
     font-family: "SSSocialRegular";
@@ -224,6 +411,8 @@ nav li a:active{
     line-height: 24px;
     color: #333;
 }
+
+/*Venue Styles*/
 
 .venue-title{
   font-family: 'Playfair Display', serif;
@@ -240,36 +429,73 @@ nav li a:active{
   font-family: 'Lato', sans-serif;
   font-size: 24px;
   line-height: 48px;
+  margin-top: -24px;
+}
+
+.venue .imgcont{
+    float: right;
+    width: 900px;
+    height: 900px;
+}
+
+.venue .side-header{
+  margin-right: 0;
+}
+
+.venue-subinfo{
+  padding-top: 167px;
+    float: left;
+    width: 25%;
+}
+
+/*News Styles*/
+
+.news .button{
+  float: right;
+  margin-top: 154px;
+}
+
+.news h2{
+  margin-top: 144px;
+  display: inline-block;
+}
+
+/*Our Partners Styles*/
+
+.partner-img{
+  text-align: center;
+  padding-bottom: 218px;
 }
 
 .partner-img img:nth-child(1){
   width: 192px;
+  margin-right: 217px;
+
 }
 
 .partner-img img:nth-child(2){
   width: 174px;
+  position: relative;
+  top: 18px;
 }
 
-footer img{
-  width: 90px;
-}
+/*Email Subscribe Styles*/
 
-footer h2{
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  line-height: 24px;
-  color: white;
-  letter-spacing: 0.8em;
-  text-align: center;
-}
 
 .subscribe h2{
+  padding-top: 148px;
   color: #fff;
+  text-align: center;
 }
 
 .subscribe p{
   width: 546px;
   color: #fff;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subscribe form{
   text-align: center;
 }
 
@@ -286,6 +512,39 @@ footer h2{
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 118px;
 }
+
+/*Footer Styles*/
+
+footer{
+  background-color: #23262f;
+}
+
+footer img{
+  width: 90px;
+}
+
+footer h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 12px;
+  line-height: 24px;
+  color: white;
+  letter-spacing: 0.8em;
+  text-align: center;
+}
+
+.verb-logo{
+    display: block;
+    text-align: center;
+    padding-bottom: 34px;
+
+}
+
+
+/*------*/
+/* Form */
+/*------*/
+
+  /*Form elements connected to subscribe section of site*/
 
 [placeholder]:focus::-webkit-input-placeholder {
   transition: opacity 0.2s 0.2s ease; 
@@ -368,100 +627,37 @@ textarea, input {
   margin: 0 auto;
 }
 
-/*-----*/
-/* Nav */
-/*-----*/
-
 
 /*--------------*/
 /* Main Content */
 /*--------------*/
 
-.logo-title img{
-  width: 424px;
+
+
+
+
+.why-trend{
+  background-color: #282d38;
 }
 
-.nav-block-1, .nav-block-2, .nav-block-3{
-  float: left;
-  height: 72px;
+.why-trend h2{
+  color: #fff;
+  display: inline-block;
 }
 
-.on-scroll{
-  background-color: #2d323e;
+.why-trend img{
+    width: 170px;
+    position: relative;
+    top: 16px;
+    left: 21px;
 }
 
-.nav-block-1{
-  width: 27.955082742%;
-  background-color: #2d323e;
-  text-align: right;
-}
-
-.nav-block-1 > a >img{
-    width: 150px;
-    margin: 17px 0;
-    margin-right: 50px;
-}
-.nav-block-2{
-  width: 45.803782506%;
-  background-color: #424752;
+.why-trend-title{
   text-align: center;
 }
 
-.nav-block-2 a{
-  font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  font-weight: 700;
-  line-height: 39px;
-  text-transform: uppercase;
-  color: #fff;
-  letter-spacing: 0.3em;
-  vertical-align: middle;
-  padding-top: 17px;
+.why-trend-title h2{
   display: inline-block;
-  width: 100%;
-  height: 100%;
-}
-
-.nav-block-3 a:active{
-  border: 0;
-}
-
-
-.nav-block-3{
-  width: 26.241134752%;
-  background-color: #2d323e;
-}
-
-.nav-block-3 li.navmenu{
-  margin-left: 61px;
-  margin-top: 12px;
-  line-height: 39px;
-  position: relative;
-}
-
-.nav-block-3 .navicon a{
-    color: white;
-    display: inline-block;
-    width: 114px;
-    height: 48px;
-    padding-bottom: 0;
-}
-
-.nav-block-3 .fa-navicon{
-    position: absolute;
-    top: 12px;
-    left: 78px;
-    font-size: 24px;
-    width: 20px;
-}
-
-.nav-block-3 .fa-navicon:before{
-  width: 20px;
-}
-
-
-.why-trend img{
-  width: 170px;
 }
 
 .venue img{
@@ -470,28 +666,44 @@ textarea, input {
 
 .subscribe{
   background-color: #2d323e;
+  border-bottom: 1px solid #393c44;
+}
+
+.our-partners h2{
+  text-align: center;
+  padding-top: 83px;
+  padding-bottom: 94px;
 }
 
 /*--------*/
 /* Stripe */
 /*--------*/
 
-/*header .strip-parent { 
-  background: #67e6ec;
+header .strip-parent { 
   height: 100%;
   position: relative;
+  z-index: 12;
+  float: left;
+  max-width: 400px;
 }
 header .strip-parent > .strip { 
-  background: #fff;
+  background: rgba(0,0,0,0);
   height: 100%;
   overflow: hidden;
   position: absolute;
   z-index: 100;
   transform: skew(20deg);
-  width: 200px; 
+  width: 400px ; 
 }
 header .strip-parent > .strip > .bg-img {
-  background: red;
+background: /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282d38+0,7db9e8+100&amp;1+0,0+100 */
+background: -moz-linear-gradient(top,  rgba(40,45,56,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(40,45,56,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(40,45,56,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
   color: #fff;
   height: 100%;
   left: -109.5px;
@@ -499,4 +711,4 @@ header .strip-parent > .strip > .bg-img {
   text-align: center;
   transform: skew(-20deg);
 }
-*/
+
