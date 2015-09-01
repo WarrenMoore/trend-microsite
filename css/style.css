@@ -31,6 +31,7 @@ body {
   font-size: 1.125rem;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 img {
@@ -737,7 +738,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', end
   z-index: 2000;
   height: 100%;
   width: 100%;
-  left: 56%;
+  left: 54.7%;
 }
 
 
