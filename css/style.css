@@ -113,6 +113,27 @@ h2{
 /*-----*/
 /*Navigation Bar Styles*/
 
+#menu {
+  position:fixed;
+  top:0px;
+  width:100%; 
+  height:75px; 
+  color: #FFFFFF;
+  z-index:9999;
+  
+  visibility: hidden;
+  opacity: 0;
+
+  
+  -webkit-transition: all 500ms ease-out;
+  transition: all 500ms ease-out;
+}
+
+#menu.sticky {
+  visibility: visible;
+  opacity: 1;
+}
+
 .navicon a{
   color: white;
 }
@@ -200,9 +221,10 @@ nav li a:active{
     margin-right: 50px;
 }
 .nav-block-2{
-  width: 45.803782506%;
+  width: 44.089834516%;
   background-color: #424752;
   text-align: center;
+  height: 75px;
 }
 
 .nav-block-2 a{
@@ -225,7 +247,7 @@ nav li a:active{
 
 
 .nav-block-3{
-  width: 26.241134752%;
+  width: 27.955082742%;
   background-color: #2d323e;
 }
 
@@ -259,7 +281,6 @@ nav li a:active{
     top: 3px;
     left: 6px;
     position: relative;
-
     }
 
 .nav-block-3 .fa-navicon:before{
@@ -293,6 +314,14 @@ header .button{
   font-style: italic;
 }
 
+.para-side .date {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.2em;
+    font-weight: 400;
+    padding-bottom: 4px;
+}
 
 .date{
   font-family: 'Lato', sans-serif;
@@ -300,6 +329,7 @@ header .button{
   line-height: 24px;
   letter-spacing: 0.2em;
   font-weight: 400;
+  padding-bottom: 41px;
 }
 
 .next-event{
@@ -341,7 +371,7 @@ header .button{
 }
 
 .special-para{
-  width: 800px;
+  max-width: 800px;
   color: #6e7991;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
@@ -361,10 +391,68 @@ header .button{
 
 .speakers{
   padding-bottom: 194px;
+   background: url('../img/shattered.png'); 
+  background-repeat: repeat;
 }
 
-.speakers img{
-  width: 328px;
+.bg-white{
+position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+100&amp;1+0,0+100;White+to+Transparent */
+background: -moz-linear-gradient(top,  rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
+background: linear-gradient(to bottom,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
+    }
+
+.circle, .circle-2, .circle-3{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+.circle{
+    width: 100%;
+    height: 0;
+    background-image: url(../img/full/layer14.png);
+    border-radius: 100%;
+    padding-bottom: 100%;
+    background-position: center left 60%;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
+}
+
+.circle-2{
+    width: 100%;
+    height: 0;
+    background-image: url(../img/full/layer15.png);
+    border-radius: 100%;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
+}
+
+.circle-3{
+    width: 100%;
+    height: 0;
+    background-image: url(../img/full/layer16.png);
+    border-radius: 100%;
+    padding-bottom: 100%;
+    background-position: center;
+    background-size: cover;
+    -webkit-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    -moz-box-shadow: inset 0px 0px 0px 10px rgba(0,0,0,0.4);
+    box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
 }
 
 .speakers li{
@@ -381,6 +469,7 @@ header .button{
 
 .speakers h2:first-child{
   text-align: center;
+  position: relative;
 }
 
 .speaker-block h2{
@@ -392,6 +481,7 @@ header .button{
   letter-spacing: 0;
   text-transform: initial;
   text-align: center;
+  position: relative;
 }
 
 .speaker-block p{
@@ -401,6 +491,7 @@ header .button{
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  position: relative;
 }
 
 .speaker-block{
@@ -420,6 +511,7 @@ header .button{
     font-size: 16px;
     line-height: 24px;
     color: #333;
+    position: relative;
 }
 
 /*Venue Styles*/
@@ -440,6 +532,8 @@ header .button{
   font-size: 24px;
   line-height: 48px;
   margin-top: -24px;
+  margin-bottom: 12px;
+
 }
 
 .venue .imgcont{
@@ -450,10 +544,11 @@ header .button{
 
 .venue .side-header{
   margin-right: 0;
+  margin-bottom: 40px;
 }
 
 .venue-subinfo{
-  padding-top: 167px;
+    padding-top: 131px;
     float: left;
     width: 25%;
 }
@@ -461,15 +556,23 @@ header .button{
 
 /*News Styles*/
 
+.news{
+  background-color: #f2f2f2;
+  padding-bottom: 167px;
+}
+
 .news .button{
   float: right;
   margin-top: 154px;
+  margin-bottom: 39px;
 }
 
 .news h2{
   margin-top: 144px;
   display: inline-block;
 }
+
+
 
 /*Our Partners Styles*/
 
@@ -524,6 +627,10 @@ header .button{
   margin-bottom: 118px;
 }
 
+.subscribe form input:active{
+  border-bottom: 1px solid rgba(255, 255, 255, 1);
+}
+
 /*Footer Styles*/
 
 footer{
@@ -550,16 +657,15 @@ footer h2{
 
 }
 
-
 /*------*/
 /* Form */
 /*------*/
 
   /*Form elements connected to subscribe section of site*/
 
-[placeholder]:focus::-webkit-input-placeholder {
-  transition: opacity 0.2s 0.2s ease; 
-  opacity: 0;
+.subscribe form input:focus{
+  color: white;
+  border-bottom: 1px solid white;
 }
 
 invalid {
@@ -643,10 +749,6 @@ textarea, input {
 /* Main Content */
 /*--------------*/
 
-
-
-
-
 .why-trend{
   background-color: #282d38;
 }
@@ -660,7 +762,7 @@ textarea, input {
     width: 170px;
     position: relative;
     top: 16px;
-    left: 21px;
+    left: 24px;
 }
 
 .why-trend-title{
@@ -727,9 +829,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', end
 
 
 .venue{
-  background-color: aliceblue;
-  padding-bottom: 254px;
-  position: relative;
+    padding-bottom: 225px;
+    position: relative;
 }
 
 
@@ -738,7 +839,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', end
   z-index: 2000;
   height: 100%;
   width: 100%;
-  left: 54.7%;
+  left: 53.7%;
 }
 
 

@@ -63,14 +63,39 @@
 
 //   });
 
+//();
+
+
   //Stripes jQuery
-  $(function() {
-  $(window).resize(function() {
+(function($) { 
+  $(document).ready(function(){
+
+    var $trigger = $('#main'),
+        $menu = $('#menu');
+    
+    $(window).scroll(function(){   
+        // console.log($(this).scrollTop(), $main.offset().top);
+
+       if ($(this).scrollTop() > $trigger.offset().top) {
+            $menu.addClass('sticky');
+
+            // $menu.fadeIn(500);
+       } else {
+          $menu.removeClass('sticky');
+            // $menu.fadeOut(500);
+      }
+    });
+
+          $(window).resize(function() {
     var extra = $('.strip-parent').height() * Math.tan(20);
     // $('.strip-parent > .strip').css('left', extra / 2);
     $('.strip-parent > .strip > .bg-img').css('left', -(extra / 2)).width('calc(100% + ' + extra + 'px');
-  }).resize();
-});
+      }).resize();
+  
+
+  });
+})(jQuery);
+
 
 //   // Responsive iframes
 //   function responsiveIframe() {

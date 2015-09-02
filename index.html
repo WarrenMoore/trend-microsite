@@ -13,7 +13,7 @@
 <body>	
 	<nav role="navigation" itemscope itemtype='https://schema.org/SiteNavigationElement'>
 
-	<section class="on-scroll clearfix">
+	<section id="menu" class="on-scroll clearfix">
 
 		<div class="wrap">
 			<div class="nav-block-1">
@@ -73,8 +73,8 @@
 	</section>
 	</header>
 
-<main role="main" class="clearfix">
-	<section class="next-event clearfix">
+<section id="main" role="main" class="clearfix">
+	<section id="menuFade" class="next-event clearfix">
 		<div class="wrap">
 			<div class="title-side">
 				<h2 class="side-header">Next Upcoming Event</h2>
@@ -115,17 +115,18 @@
 		</div>
 	</section>
 		<section class="speakers clearfix">
+			<div class="bg-white"></div>
 			<div class="wrap">
 				<h2>Speakers</h2>
 				<div class="speaker-block">
-					<img src="img/speaker-circle/Layer 14.png">
+					<div class="circle"></div>
 					<h2>Christopher Donnelly</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 	            	<li ><a class="ss-social-regular" href="" target="_blank">&#xF610;</a></li>
 					<li><a class="ss-social-regular" href="" target="_blank">&#xF612;</a></li>
 				</div>
 				<div class="speaker-block">
-					<img src="img/speaker-circle/Layer 15.png">
+					<div class="circle-2"></div>
 					<h2>Joe Davine</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
 	</p>
@@ -133,7 +134,7 @@
 	            	<li><a class="ss-social-regular" href="" target="_blank">&#xF612;</a></li>
 				</div>
 				<div class="speaker-block">
-					<img src="img/speaker-circle/Layer 16.png">
+					<div class="circle-3"></div>
 					<h2>Steve Jobs</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 	            	<li><a class="ss-social-regular" href="" target="_blank">&#xF610;</a></li>
@@ -161,7 +162,7 @@
 			<p class="venue-title">Venue Name</p>
 			<p class="address">10 Venue Street, Venue City</p>
 			<p class="date">30.10.15</p>
-			<li class="button"><a href="#" target="_blank">View Map</a></li>
+			<a class="button" href="#" target="_blank">View Map</a>
 			</div>
 		</div>
 	</section>
@@ -191,7 +192,7 @@
 			<form><input type="email" placeholder="Email Address"></form>
 		</div>
 	</section>
-</main>
+</section>
 
 <footer role="complementary" class="clearfix" itemscope itemtype="https://schema.org/WPFooter">
 	<div class="wrap">
@@ -239,6 +240,8 @@
 	</footer>
 </div>
   -->
+  <!-- <script src="/path/to/noframework.waypoints.min.js"></script> -->
+
 <script src="js/rwd.js"></script>	
 </body>
 </html>
