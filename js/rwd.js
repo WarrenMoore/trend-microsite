@@ -86,6 +86,33 @@
       }
     });
 
+
+// Accordion
+
+$(document).ready(function() {
+      $('.nav-toggle').click(function(){
+      //get collapse content selector
+      var collapse_content_selector = $(this).attr('href');         
+          
+      //make the collapse content to be shown or hide
+      var toggle_switch = $(this);
+      $(collapse_content_selector).toggle(function(){
+        if($(this).css('display')=='none'){
+                                //change the button label to be 'Show'
+        toggle_switch.html('Show the Agenda');
+        }else{
+                                //change the button label to be 'Hide'
+        toggle_switch.html('Hide the Agenda');
+        }
+      });
+      });
+        
+    }); 
+
+
+
+
+
           $(window).resize(function() {
     var extra = $('.strip-parent').height() * Math.tan(20);
     // $('.strip-parent > .strip').css('left', extra / 2);
