@@ -6,14 +6,26 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="morph/css/component.css">
+
 	<link rel="stylesheet" href="css/style.css">
-	<script src="js/modernizr.js"></script>
+	
+	<script src="morph/js/modernizr.custom.js"></script>
 	<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+
+	<script src="morph/js/classie.js"></script>
+	<script src="morph/js/uiMorphingButton_inflow.js"></script>
 
 </head>
 <body>	
-	<nav role="navigation" itemscope itemtype='https://schema.org/SiteNavigationElement'>
+	<section class="jump-to hidden">
+		FULL SCREEN NAV
+
+		<a href="" class="jump-to-close">CLOSE</a>
+	</section>
+
+	<nav role="navigation" class="nav" itemscope itemtype='https://schema.org/SiteNavigationElement'>
 
 	<section id="menu" class="on-scroll clearfix">
 
@@ -22,11 +34,11 @@
 				<a href="#"><img src="img/small-title-trend.png">
 			</div>
 			<div class="nav-block-2">
-				<a href="#">Request an invite</a>
+				<a href="#" class="open-login-morph">Request an invite</a>
 			</div>
 			<div class="nav-block-3 ">
 				<div class="navicon closed">
-					<li class="navmenu"><a href="#"><span class="">Jump To</span><i class="fa fa-navicon"></i></a></li>
+					<li class="navmenu"><a href="#" class="jump-to-button"><span>Jump To</span><i class="fa fa-navicon"></i></a></li>
 				</div>
 			</div>
 		</div>
@@ -37,8 +49,8 @@
 
 	<div class="navicon closed clearfix">
 		<div class="navicon closed show"><li class="navmenu">
-			<a href="#">
-				<span class="">Jump To</span><i class="fa fa-navicon"></i>
+			<a href="#" class="jump-to-button">
+				<span>Jump To</span><i class="fa fa-navicon"></i>
 			</a>
 		</li></div>
 	</div>
@@ -56,25 +68,23 @@
 </nav>
 
 <header class="clearfix" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
+
 <div class="strip-parent">
   		<div class="strip">
     		<div class="bg-img"></div>
   		</div>
 	</div>
-	 
 
-<section class="wrap">
-<div class="logo-title">
+	<div class="logo-title">
 
 		<img src="img/Trend-top.png" alt="" class="logo">
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-		<a href="#" class="button">Our Next Event</a>
+		<a href="#" class="scroll-to-next-event button">Our Next Event</a>
 
 	</div>
-	</section>
-	</header>
+</header>
 
-<section id="main" role="main" class="clearfix">
+<section role="main" class="clearfix">
 	<section class="next-event clearfix">
 		<div class="wrap">
 			<div class="title-side">
@@ -83,14 +93,31 @@
 				<h2>All things Trend 2015</h2>
 				<p class="date">30.10.15</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-				<a class="button" href="#">Request an invite</a>
+			<div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+				<button id="main" class="button" type="button">Request an Invite</button>
+				<div class="morph-content">
+					<div>
+						<div class="content-style-form content-style-form-1">
+							<span class="icon icon-close"><img src="img/close.png"/></span>
+							<form>
+								<h3>Request an Invite</h3>
+		        <input type="text" placeholder="Name" name="first">
+		        <input type="email" placeholder="Email Address" name="email">
+		        <input type="text" placeholder="Company" name="company">
+		        <input type="text" placeholder="Job" name="job">
+		        <input disabled type="submit" value="send request" name="sub">
+		        </form>
+						</div>
+					</div>
+				</div>
+			</div><!-- morph-button -->
 
 				
-	<section class="round-border hidden">
-		<div>
-			<button href="#collapse1" class="nav-toggle"><p>Show the Agenda</p></button>
+	<section class="round-border">
+		<div class="showing">
+			<p>Show the Agenda</p>
 		</div>
-		<div id="collapse1" style="display:none">
+		<div class="list">
 			<ul>
 				<li>Bla bla bla bla</li>
 				<li>Bla bla bla bla</li>
@@ -102,24 +129,6 @@
 
 
 			</div>
-		</div>
-	</section>
-
-	
-
-<section class="lightbox hidden">
-		<div class="wrap">
-			<form>
-				<label class="">Name</label>
-		        <input type="text" name="first">
-		        <label class="">Email</label>
-		        <input type="email" placeholder="Email Address" name="email">
-		        <label class="">Company</label>
-		        <input type="text" name="company">
-				<label class="">Job Title</label>
-		        <input type="text" name="job">
-		        <input disabled type="submit" name="sub">
-	    	</form>
 		</div>
 	</section>
 
@@ -174,6 +183,7 @@
 				</div>
 			</div>
 
+
 			<!-- <div class="imgcont">
 			<img src="img/layer13.png" alt="">
 			</div> -->
@@ -185,9 +195,9 @@
 			<a class="button" href="#" target="_blank">View Map</a>
 			</div>
 		</div>
+
+		<div class="map"></div>
 	</section>
-
-
 
 
 	<section class="news hidden">
@@ -285,8 +295,7 @@
 	</footer>
 </div>
   -->
+
 <script src="js/rwd.js"></script>	
-
-
 </body>
 </html>

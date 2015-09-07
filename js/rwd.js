@@ -65,7 +65,6 @@
 
 //();
 
-
   //Stripes jQuery
 (function($) { 
   $(document).ready(function(){
@@ -77,41 +76,36 @@
         // console.log($(this).scrollTop(), $main.offset().top);
 
        if ($(this).scrollTop() > $trigger.offset().top) {
-            $menu.addClass('sticky');
-
-            // $menu.fadeIn(500);
+          $menu.addClass('sticky');
+          // $menu.fadeIn(500);
        } else {
           $menu.removeClass('sticky');
-            // $menu.fadeOut(500);
+          // $menu.fadeOut(500);
       }
     });
 
 
 // Accordion
 
-$(document).ready(function() {
-      $('.nav-toggle').click(function(){
-      //get collapse content selector
-      var collapse_content_selector = $(this).attr('href');         
+// $(document).ready(function() {
+//       $('.nav-toggle').click(function(){
+//       //get collapse content selector
+//       var collapse_content_selector = $(this).attr('href');         
           
-      //make the collapse content to be shown or hide
-      var toggle_switch = $(this);
-      $(collapse_content_selector).toggle(function(){
-        if($(this).css('display')=='none'){
-                                //change the button label to be 'Show'
-        toggle_switch.html('Show the Agenda');
-        }else{
-                                //change the button label to be 'Hide'
-        toggle_switch.html('Hide the Agenda');
-        }
-      });
-      });
+//       //make the collapse content to be shown or hide
+//       var toggle_switch = $(this);
+//       $(collapse_content_selector).toggle(function(){
+//         if($(this).css('display')=='none'){
+//                                 //change the button label to be 'Show'
+//         toggle_switch.html('Show the Agenda');
+//         }else{
+//                                 //change the button label to be 'Hide'
+//         toggle_switch.html('Hide the Agenda');
+//         }
+//       });
+//       });
         
-    }); 
-
-
-
-
+//     }); 
 
           $(window).resize(function() {
     var extra = $('.strip-parent').height() * Math.tan(20);
@@ -121,6 +115,143 @@ $(document).ready(function() {
   
 
   });
+
+  /*
+   * Venue Map
+   */ 
+
+   var venueMap = $('.venue .map'),
+       venueMapButton = $('.venue-subinfo .button');
+
+   venueMapButton.on('click', function(e) {
+      e.preventDefault();
+
+      venueMap.toggleClass('open');
+
+      if (venueMap.hasClass('open')) {
+        venueMapButton.text('Close map');
+      } else {
+        venueMapButton.text('Open map');
+      }
+   }); 
+
+/*
+ * Morph button code
+ */
+
+   /* Invite button */
+  var docElem = window.document.documentElement, didScroll, scrollPosition;
+
+  // trick to prevent scrolling when opening/closing button
+  function noScrollFn() {
+    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+  }
+
+  function noScroll() {
+    window.removeEventListener( 'scroll', scrollHandler );
+    window.addEventListener( 'scroll', noScrollFn );
+  }
+
+  function scrollFn() {
+    window.addEventListener( 'scroll', scrollHandler );
+  }
+
+  function canScroll() {
+    window.removeEventListener( 'scroll', noScrollFn );
+    scrollFn();
+  }
+
+  function scrollHandler() {
+    if( !didScroll ) {
+      didScroll = true;
+      setTimeout( function() { scrollPage(); }, 60 );
+    }
+  };
+
+  function scrollPage() {
+    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+    didScroll = false;
+  };
+
+  scrollFn();
+
+  [].slice.call( document.querySelectorAll( '.morph-button, .nate' )).forEach( function( bttn ) {
+    morphingButton = new UIMorphingButton( bttn, {
+      closeEl : '.icon-close',
+      onBeforeOpen : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterOpen : function() {
+        // can scroll again
+        canScroll();
+      },
+      onBeforeClose : function() {
+        // don't allow to scroll
+        noScroll();
+      },
+      onAfterClose : function() {
+        // can scroll again
+        canScroll();
+      }
+    } );
+  } );
+
+  morphButton = $('.morph-button');
+
+  $('.open-login-morph').on('click', function(e) {
+      morphingButton.toggle();
+      e.preventDefault();
+  });
+
+
+
+  var jumpTo = $('.jump-to'),
+      jumpToButton = $('.jump-to-button'),
+      jumpToClose= $('.jump-to-close');
+
+  jumpToButton.on('click', function(e) {
+    jumpTo.toggleClass('open');
+
+    e.preventDefault();
+  });
+
+  jumpToClose.on('click', function(e) {
+    jumpTo.toggleClass('open');
+
+    e.preventDefault();
+  });
+
+  /*
+   * Scroll to
+   */
+
+   $(".scroll-to-next-event").click(function (e){
+        $('html, body').animate({
+            scrollTop: $(".next-event").offset().top
+        }, 2000);
+
+        e.preventDefault();
+    });
+
+
+   /*
+    * Agenda
+    */
+
+    var accordion = $('.showing');
+    var list = $('.list');
+
+    accordion.click(function(e){
+      console.log('working');
+          list.stop(false, true).slideToggle(function(){
+          console.log('animation complete!');
+
+          });
+        e.preventDefault();
+
+    });
+
 })(jQuery);
 
 
