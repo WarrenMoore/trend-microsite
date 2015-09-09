@@ -120,7 +120,7 @@
 
 /* Morph Button Style: Modal */
 .morph-button-modal::before {
-	position: fixed;
+	/*position: fixed;*/
 	top: 0;
 	left: 0;
 	z-index: 800;

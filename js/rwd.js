@@ -229,7 +229,7 @@
    $(".scroll-to-next-event").click(function (e){
         $('html, body').animate({
             scrollTop: $(".next-event").offset().top
-        }, 2000);
+        }, 1300);
 
         e.preventDefault();
     });
