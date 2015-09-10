@@ -921,6 +921,11 @@ header .button {
 .showing{
     margin: 60px auto 36px auto;
 }
+
+.accordion .title {
+  margin: 60px auto 36px auto;
+}
+
 }
 
 /*Why Trend*/
@@ -1351,6 +1356,10 @@ header .button {
     right: 0;
 }
 
+.mobile-button{
+  display: none;
+}
+
 /*Map Breakpoints*/
 
 @media (max-width: 1373px){
@@ -1398,6 +1407,31 @@ header .button {
     .venue .map {
   display: none;
   }
+
+  .button{
+    display: none;
+  }
+
+  .mobile-button{
+    display: block;
+    width: 257px;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: block;
+    background-color: #2d323e;
+    padding: 26px;
+    list-style-type: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+  }
+
+
 }
 
 /*News Styles*/
