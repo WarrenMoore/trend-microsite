@@ -923,7 +923,7 @@ header .button {
 }
 
 .accordion .title {
-  margin: 60px auto 36px auto;
+  margin: 90px auto 36px auto;
 }
 
 }
@@ -1408,7 +1408,7 @@ header .button {
   display: none;
   }
 
-  .button{
+  .venue-subinfo .button{
     display: none;
   }
 
@@ -1513,16 +1513,17 @@ header .button {
   padding-bottom: 230px;
 }
 
-.partner-img img:nth-child(1){
+.first-logo{
   width: 192px;
   margin-right: 217px;
-
+  display: inline-block;
 }
 
-.partner-img img:nth-child(2){
+.second-logo{
   width: 264px;
   position: relative;
   top: 18px;
+  display: inline-block;
 }
 
 /*Our Partners Breakpoints*/
@@ -1532,7 +1533,7 @@ header .button {
   .our-partners h2{
     padding-bottom: 34px;
   }
-  .partner-img img:nth-child(1) {
+.first-logo {
     width: 192px;
     display: block;
     padding-bottom: 50px;
@@ -1540,7 +1541,7 @@ header .button {
     margin-bottom: 51px;
 }
 
-.partner-img img:nth-child(2) {
+.second-logo {
     width: 264px;
     margin: 0 auto;
     display: block;
@@ -1553,7 +1554,7 @@ header .button {
   .our-partners h2{
     padding-bottom: 34px;
   }
-  .partner-img img:nth-child(1) {
+  .first-logo {
     width: 192px;
     display: block;
     padding-bottom: 50px;
@@ -1561,7 +1562,7 @@ header .button {
     margin-bottom: 51px;
 }
 
-.partner-img img:nth-child(2) {
+  .second-logo {
     width: 264px;
     margin: 0 auto;
     display: block;
@@ -1570,12 +1571,12 @@ header .button {
 }
 
 @media (max-width: 587px){
-  .partner-img img:nth-child(1) {
+  .first-logo {
     display: block;
     margin: 0 auto;
     margin-bottom: 51px;
   }
-  .partner-img img:nth-child(2) {
+  .second-logo {
     display: block;
     margin: 0 auto;
   }
@@ -1671,6 +1672,7 @@ header .button {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
+  margin-top: 48px;
   padding: 48px;
   font-size: 32px;
   text-align: center;
@@ -1685,6 +1687,16 @@ header .button {
 .subscribe form input:focus{
   color: white;
   border-bottom: 1px solid white;
+}
+
+/*Mozilla Firefox Hack for the form to have padding*/
+@-moz-document url-prefix() {
+.subscribe form input{
+
+  margin-top: 48px!important;
+  padding: 0!important;
+}
+
 }
 
 /*Email Subscribe Form Breakpoints*/
@@ -1801,6 +1813,16 @@ invalid {
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
   padding: 48px;
+  font-size: 32px;
+  text-align: center;
+}
+
+input::-moz-placeholder {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.5);
+  padding-bottom: 20px;
+  margin-top: 48px;
   font-size: 32px;
   text-align: center;
 }
