@@ -77,7 +77,7 @@ a:active {
 
 /*Wrap Breakpoints*/
 
-@media(max-width: 1224px){
+@media(max-width: 76.5rem){
 
   .wrap{
     padding: 0 2rem;
@@ -85,7 +85,7 @@ a:active {
 
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
 
     .wrap {
     padding: 0 1.5rem;
@@ -99,23 +99,23 @@ a:active {
 
 h1{
   font-family: 'Lato', sans-serif;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
   font-weight: 400;
-  width: 453px;
+  width: 28.3125rem;
 }
 
 p{
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 h2{
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 96px;
+  font-size: 1.5rem;
+  line-height: 6rem;
   letter-spacing: 0.8em;  
   text-transform: uppercase;
   color: #333;
@@ -125,17 +125,17 @@ h2{
 /*Button Styles*/
 
 .button, .morph-button-modal-2 button.button{
-  width: 257px;
+  width: 16.0625rem;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   font-weight: 700;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   display: block;
   background-color: #2d323e;
-  padding: 26px;
+  padding: 1.625rem;
   list-style-type: none;
   position: relative;
   color: white;
@@ -146,10 +146,10 @@ h2{
 }
 
 .button img {
-  width: 14px;
+  width: 0.875rem;
   position: absolute;
-  top: 30.25px;
-  left: 216px;
+  top: 1.89062rem;
+  left: 13.5rem;
 }
 
 /* 
@@ -206,7 +206,7 @@ h2{
 #menu {
   position: absolute;
   width: 100%;  
-  height:75px; 
+  height:4.6875rem; 
   color: #FFFFFF;
   z-index:9999;
   visibility: hidden;
@@ -236,8 +236,8 @@ li.navmenu{
 
 .navmenu span{
       font-family: 'Lato', sans-serif;
-      font-size: 10px;
-      line-height: 24px;
+      font-size: 0.625rem;
+      line-height: 1.5rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       font-weight: 700;
@@ -245,14 +245,14 @@ li.navmenu{
 
 nav li a{
   font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
   letter-spacing: 0.8em;  
   text-transform: uppercase;
   color: #000;
   font-weight: 400;
   list-style-type: none;
-  padding-bottom: 12px;
+  padding-bottom: 0.75rem;
   }
 
 .closed{
@@ -268,8 +268,8 @@ nav li a{
 }
 
 .logo-title img{
-  width: 424px;
-  margin: 22% 0 40px 0;
+  width: 26.5rem;
+  margin: 22% 0 2.5rem 0;
     text-align: center;
 }
 
@@ -277,8 +277,8 @@ nav li a{
 .show > .navmenu > a {
     position: relative;
     z-index: 110;
-    top: 13px;
-    left: -18px;
+    top: 0.8125rem;
+    left: -1.125rem;
 }
 
 /*Need to remember which style works the best betweeen above and below*/
@@ -292,7 +292,7 @@ nav li a{
 
 .nav-block-1, .nav-block-2, .nav-block-3{
   float: left;
-  height: 72px;
+  height: 4.5rem;
 }
 
 .on-scroll{
@@ -314,32 +314,32 @@ nav li a{
 }
 
 .nav-block-1 > a >img{
-    width: 150px;
-    margin: 17px 0;
-    margin-right: 50px;
+    width: 9.375rem;
+    margin: 1.0625rem 0;
+    margin-right: 3.125rem;
 }
 
   .nav-block-1 img {
-  min-width: 121px; 
+  min-width: 7.5625rem; 
 }
 
 .nav-block-2{
   width: 44.089834516%;
   background-color: #424752;
   text-align: center;
-  height: 75px;
+  height: 4.6875rem;
 }
 
 .nav-block-2 a {
     font-family: 'Lato', sans-serif;
-    font-size: 12px;
+    font-size: 0.75rem;
     font-weight: 700;
-    line-height: 39px;
+    line-height: 2.4375rem;
     text-transform: uppercase;
     color: #fff;
     letter-spacing: 0.3em;
     vertical-align: middle;
-    padding-top: 17px;
+    padding-top: 1.0625rem;
     display: inline-block;
     height: 100%;
     cursor: pointer;
@@ -356,12 +356,12 @@ nav li a{
 }
 
 .nav-block-3 li.navmenu{
-  margin-left: 61px;
-  margin-top: 12px;
-  line-height: 39px;
+  margin-left: 3.8125rem;
+  margin-top: 0.75rem;
+  line-height: 2.4375rem;
   position: relative;
-  left: -2px;
-  top: 1px;
+  left: -0.125rem;
+  top: 0.0625rem;
 }
 
 .nav-block-3 .navicon a{
@@ -374,30 +374,30 @@ nav li a{
 
 .nav-block-3 .fa-navicon {
     position: absolute;
-    top: 11px;
-    left: 64px;
-    font-size: 20px;
-    width: 20px;
+    top: 0.6875rem;
+    left: 4rem;
+    font-size: 1.25rem;
+    width: 1.25rem;
 }
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
-    top: 3px;
-    left: 6px;
+    top: 0.1875rem;
+    left: 0.375rem;
     position: relative;
     }
 
 .nav-block-3 .fa-navicon:before{
-  width: 20px;
+  width: 1.25rem;
 }
 
 /*Nav Breakpoints*/
 
-@media (max-width: 645px) {
+@media (max-width: 40.3125rem) {
 
 .nav-block-1, .nav-block-2, .nav-block-3{
   float: left;
-  height: 72px;
+  height: 4.5rem;
 }
 
 .nav-block-1{
@@ -413,18 +413,18 @@ nav li a{
 }*/
 
 .nav-block-1 > a >img {
-    width: 121px;
-    margin: 21px 0;
+    width: 7.5625rem;
+    margin: 1.3125rem 0;
     position: relative;
     z-index: 100000;
-    margin-left: 22px;
+    margin-left: 1.375rem;
 }
 
 .nav-block-2{
   width: 44.089834516%;
   background-color: #2d323e;
   text-align: center;
-  height: 75px;
+  height: 4.6875rem;
 }
 
 .nav-block-2 a{
@@ -442,39 +442,39 @@ display: none;
 }
 
 .nav-block-3 li.navmenu{
-  margin-left: 61px;
-  margin-top: 12px;
-  line-height: 39px;
+  margin-left: 3.8125rem;
+  margin-top: 0.75rem;
+  line-height: 2.4375rem;
   position: relative;
-  left: -2px;
-  top: 1px;
+  left: -0.125rem;
+  top: 0.0625rem;
 }
 
 .nav-block-3 .navicon a{
     color: white;
     display: inline-block;
-    width: 114px;
-    height: 48px;
+    width: 7.125rem;
+    height: 3rem;
     padding-bottom: 0;
 }
 
 .nav-block-3 .fa-navicon {
     position: absolute;
-    top: 11px;
-    left: 64px;
-    font-size: 20px;
-    width: 20px;
+    top: 0.6875rem;
+    left: 4rem;
+    font-size: 1.25rem;
+    width: 1.25rem;
 }
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
-    top: 3px;
-    left: 6px;
+    top: 0.1875rem;
+    left: 0.375rem;
     position: relative;
     }
 
 .nav-block-3 .fa-navicon:before{
-  width: 20px;
+  width: 1.25rem;
 }
 
 .nav-block-2 .open-login-morph{
@@ -483,15 +483,15 @@ display: none;
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
 
     .on-scroll .wrap{
     padding: 0 0rem;
   }
 
   .news li.button {
-    margin-top: 154px;
-    margin-bottom: 39px;
+    margin-top: 9.625rem;
+    margin-bottom: 2.4375rem;
     margin: 0 auto;
     float: none;
 }
@@ -505,7 +505,7 @@ display: none;
 
 .nav-block-1, .nav-block-2, .nav-block-3{
   float: left;
-  height: 72px;
+  height: 4.5rem;
 }
 
 .nav-block-1{
@@ -515,27 +515,27 @@ display: none;
 }
 
 .nav-block-1 > a >img{
-    width: 121px;
-    margin: 21px 0;
-    margin-right: 10px;
+    width: 7.5625rem;
+    margin: 1.3125rem 0;
+    margin-right: 0.625rem;
 }
 .nav-block-2{
   width: 44.089834516%;
   background-color: #2d323e;
   text-align: center;
-  height: 75px;
+  height: 4.6875rem;
 }
 
 .nav-block-2 a{
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-weight: 700;
-  line-height: 39px;
+  line-height: 2.4375rem;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.3em;
   vertical-align: middle;
-  padding-top: 17px;
+  padding-top: 1.0625rem;
   display: inline-block;
   height: 100%;
 }
@@ -550,39 +550,39 @@ display: none;
 }
 
 .nav-block-3 li.navmenu{
-  margin-left: 61px;
-  margin-top: 12px;
-  line-height: 39px;
+  margin-left: 3.8125rem;
+  margin-top: 0.75rem;
+  line-height: 2.4375rem;
   position: relative;
-  left: -2px;
-  top: 1px;
+  left: -0.125rem;
+  top: 0.0625rem;
 }
 
 .nav-block-3 .navicon a{
     color: white;
     display: inline-block;
-    width: 114px;
-    height: 48px;
+    width: 7.125rem;
+    height: 3rem;
     padding-bottom: 0;
 }
 
 .nav-block-3 .fa-navicon {
     position: absolute;
-    top: 11px;
-    left: 64px;
-    font-size: 20px;
-    width: 20px;
+    top: 0.6875rem;
+    left: 4rem;
+    font-size: 1.25rem;
+    width: 1.25rem;
 }
 
 .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
     content: "\f0c9";
-    top: 3px;
-    left: 6px;
+    top: 0.1875rem;
+    left: 0.375rem;
     position: relative;
     }
 
 .nav-block-3 .fa-navicon:before{
-  width: 20px;
+  width: 1.25rem;
 }
 
 }
@@ -592,17 +592,17 @@ display: none;
   .on-scroll .wrap{
     padding: 0px 1.3em;
   }
-
+/*Keep an eye on  ^^*/
   .nav-block-3 span{
   display: none;
 }
 
 .nav-block-3 .fa-navicon {
     position: absolute;
-    top: 11px;
-    left: 89px;
-    font-size: 20px;
-    width: 20px;
+    top: 0.6875rem;
+    left: 5.5625rem;
+    font-size: 1.25rem;
+    width: 1.25rem;
 }
 
 }
@@ -612,7 +612,7 @@ header{
   background-image: url(../img/top-background.png);
   height: 100vh;
   background-size: cover;
-  min-height: 512px;
+  min-height: 32rem;
   overflow: hidden;
   width: 100%;
 }
@@ -620,8 +620,8 @@ header{
 
 header p{
   color: white;
-  width: 410px;
-  padding-bottom: 31px;
+  width: 25.625rem;
+  padding-bottom: 1.9375rem;
 }
 
 header .button{
@@ -631,13 +631,12 @@ header .button{
 
 /*Header Breakpoints*/
 
-@media (max-width: 700px) {
-
+@media (max-width: 43.75rem) {
 
 header p {
     color: white;
     width: 100%;
-    margin-bottom: 31px;
+    margin-bottom: 1.9375rem;
     margin: 0 auto;
 }
 
@@ -645,7 +644,7 @@ header .button {
     color: #2d323e;
     background-color: white;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 3rem;
 }
 
 .logo-title{
@@ -665,14 +664,14 @@ header .button {
 }
 
   .logo-title img{
-  width: 424px;
-  margin: 10vh 0 40px 0;
+  width: 26.5rem;
+  margin: 10vh 0 2.5rem 0;
   text-align: center;
 }
   
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
     .header p {
     width: 100%;
 }
@@ -681,33 +680,33 @@ header .button {
 /* Next Event Section Styles */
 
 .next-event {
-    padding-top: 114.08px;
-    padding-bottom: 63px;
+    padding-top: 7.13rem;
+    padding-bottom: 3.9375rem;
 }
 
 .para-title{
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 24px;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   font-style: italic;
 }
 
 .para-side .date {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     letter-spacing: 0.2em;
     font-weight: 400;
-    padding-bottom: 4px;
+    padding-bottom: 0.25rem;
 }
 
 .date{
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   letter-spacing: 0.2em;
   font-weight: 400;
-  padding-bottom: 41px;
+  padding-bottom: 2.5625rem;
 }
 
 /*.next-event{
@@ -717,12 +716,12 @@ header .button {
 }*/
 
 .side-header{
-  width: 521px;
+  width: 32.5625rem;
   margin: 0;
-  margin-right: 125px;
+  margin-right: 7.8125rem;
   font-family: 'Playfair Display', serif;
-  font-size: 48px;
-  line-height: 96px;
+  font-size: 3rem;
+  line-height: 6rem;
   letter-spacing: 0.8em;
   text-transform: uppercase;
   font-weight: 400;
@@ -731,15 +730,15 @@ header .button {
 
 .para-side{
   font-family: 'Playfair Display', serif;
-  width: 527px;
+  width: 32.9375rem;
   text-align: left;
   float: left;
 }
 
 .para-side h2{
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
   font-weight: 400;
   font-style: italic;
   letter-spacing: 0;
@@ -747,20 +746,20 @@ header .button {
 }
 
 .para-side .button{
-  margin-top: 47px;
+  margin-top: 2.9375rem;
 }
 
 .special-para{
-  max-width: 800px;
+  max-width: 50rem;
   color: #6e7991;
   font-family: 'Playfair Display', serif;
   font-weight: 400;
-  font-size: 32px;
-  line-height: 48px;
+  font-size: 2rem;
+  line-height: 3rem;
   text-align: center;
   margin: 0 auto;
-  margin-top: 40.08px;
-  padding-bottom: 138px;
+  margin-top: 2.505rem;
+  padding-bottom: 8.625rem;
 }
 
 .special-para span{
@@ -769,7 +768,7 @@ header .button {
 
 /*Next Event Breakpoints*/
 
-@media(max-width: 1224px){
+@media(max-width: 76.5rem){
 
   .next-event .side-header{
     width: 40%;
@@ -782,20 +781,20 @@ header .button {
 
 }
 
-@media(max-width: 1163px){
+@media(max-width: 72.6875rem){
 
 .next-event .side-header{
-    font-size: 38px;
+    font-size: 2.375rem;
 }
 
 }
 
-@media(max-width: 1039px){
+@media(max-width: 64.9375rem){
 .next-event .side-header{
     width: 100%;
     margin: 0 auto;
     font-family: 'Playfair Display', serif;
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 400;
     text-align: center;
     float: none;
@@ -811,20 +810,20 @@ header .button {
 }
 
 .special-para{
-  margin-top: 40px;
+  margin-top: 2.5rem;
 }
 
    .para-side .button{ 
-    margin: 47px auto 0 auto;
+    margin: 2.9375rem auto 0 auto;
   }
 
   .next-event{
-    margin-top: 20.08px;
+    margin-top: 1.255rem;
   }
 
 }
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
 
   .para-side {
     width: 100%;
@@ -834,31 +833,31 @@ header .button {
 }
 
 .para-side .button{
-    margin: 47px auto 0 auto;
+    margin: 2.9375rem auto 0 auto;
 }
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
   .next-event {
-    padding-top: 56.08px;
-    padding-bottom: 63px;
+    padding-top: 3.505rem;
+    padding-bottom: 3.9375rem;
 }
 }
 
 /*Accordion Styles*/
 
 .accordion .title {
-  margin-top: 60px;
-  margin-bottom: 36px;
-  padding-bottom: 20px;
-  font-size: 16px;
+  margin-top: 3.75rem;
+  margin-bottom: 2.25rem;
+  padding-bottom: 1.25rem;
+  font-size: 1rem;
   font-family: 'lato', sans-serif;
   font-weight: 400;
   color: #2d323e;
-  line-height: 24px;
-  border-bottom: 1px #ccc solid;
-  max-width: 500px;
+  line-height: 1.5rem;
+  border-bottom: 0.0625rem #ccc solid;
+  max-width: 31.25rem;
   cursor: pointer;
   overflow: hidden;
 }
@@ -871,9 +870,9 @@ header .button {
 .accordion .title img {
   visibility: hidden;
   opacity: 0;
-  -webkit-transform: translate(40px);
-      -ms-transform: translate(40px);
-          transform: translate(40px);
+  -webkit-transform: translate(2.5rem);
+      -ms-transform: translate(2.5rem);
+          transform: translate(2.5rem);
 
   float: right;
   margin-top: -0.75rem;
@@ -897,8 +896,8 @@ header .button {
   list-style-type: none;
   font-weight: 400;
   color: #2d323e;
-  font-size: 16px;
-  line-height: 36px;
+  font-size: 1rem;
+  line-height: 2.25rem;
 }
 
 
@@ -917,13 +916,13 @@ header .button {
 
 /*Accordion Breakpoint*/
 
-@media (max-width: 1040px){
+@media (max-width: 65rem){
 .showing{
-    margin: 60px auto 36px auto;
+    margin: 3.75rem auto 2.25rem auto;
 }
 
 .accordion .title {
-  margin: 90px auto 36px auto;
+  margin: 5.625rem auto 2.25rem auto;
 }
 
 }
@@ -941,10 +940,10 @@ header .button {
 }
 
 .why-trend img {
-    width: 170px;
+    width: 10.625rem;
     position: relative;
-    top: 14px;
-    left: 24px;
+    top: 0.875rem;
+    left: 1.5rem;
 }
 
 .why-trend-title{
@@ -953,17 +952,17 @@ header .button {
 
 .why-trend-title h2{
   display: inline-block;
-  margin-top: 86px;
+  margin-top: 5.375rem;
 }
 
 .why-trend-relative{
-      width: 152px;
+      width: 9.5rem;
     display: inline-block;
 }
 
 /*Why Trend Breakpoints*/
 
-@media(max-width: 864px){
+@media(max-width: 54rem){
 
     .why-trend-title{
     position: relative; 
@@ -972,21 +971,21 @@ header .button {
 
 }
 
-@media (max-width: 635px) {
+@media (max-width: 39.6875rem) {
 .next-event .side-header{
-    font-size: 38px;
-    line-height: 86px;
+    font-size: 2.375rem;
+    line-height: 5.375rem;
   }
 }
 
-@media (max-width: 516px) {
+@media (max-width: 32.25rem) {
 .next-event .side-header{
-    font-size: 28px;
-    line-height: 64px;
+    font-size: 1.75rem;
+    line-height: 4rem;
   }
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
 
 .next-event .side-header{
   width: 100%;
@@ -1017,41 +1016,41 @@ header .button {
 .why-trend-title h2{
   display: block;
   text-align: center;
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .why-trend-relative {
-    width: 152px;
+    width: 9.5rem;
     display: block;
     margin: 0 auto;
-    left: -22px;
+    left: -1.375rem;
     position: relative;
 }
 
 .why-trend img {
-    width: 170px;
+    width: 10.625rem;
     position: relative;
-    top: 14px;
-    left: 24px;
+    top: 0.875rem;
+    left: 1.5rem;
 }
   
 }
 
-@media (max-width: 390px) {
+@media (max-width: 24.375rem) {
 .next-event .side-header{
-    font-size: 23px;
-    line-height: 64px;
+    font-size: 1.4375rem;
+    line-height: 4rem;
   }
 
   .why-trend-title h2 {
-    font-size: 22px;
+    font-size: 1.375rem;
   }
 }
 
 /* Speakers Styles */
 
 .speakers{
-  padding-bottom: 186px;
+  padding-bottom: 11.625rem;
    background: url('../img/shattered.png'); 
   background-repeat: repeat;
 }
@@ -1092,7 +1091,7 @@ header .button {
   padding-bottom: 100%;
   background-position: center left 60%;
   background-size: cover;
-  box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
+  box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
 
 .circle-2{
@@ -1103,7 +1102,7 @@ header .button {
   padding-bottom: 100%;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
+  box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
 
 .circle-3{
@@ -1114,12 +1113,12 @@ header .button {
   padding-bottom: 100%;
   background-position: center;
   background-size: cover;
-  box-shadow: inset 0px 0px 0px 10px rgba(255,255,255,0.4);
+  box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
 
 .twitter-pos{
   position: relative;
-  top: 2px;
+  top: 0.125rem;
 }
 
 .speakers li{
@@ -1127,7 +1126,7 @@ header .button {
     color: #333;
     list-style-type: none;
     display: inline-block;
-    margin-right: 27px;
+    margin-right: 1.6875rem;
 }
 
 .speakers li:last-child{
@@ -1138,7 +1137,7 @@ header .button {
   text-align: center;
   position: relative;
   left: 0.4em;
-  padding-top: 27px;
+  padding-top: 1.6875rem;
 }
 
 
@@ -1146,8 +1145,8 @@ header .button {
   color: #333;
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 24px;
-  line-height: 48px;  
+  font-size: 1.5rem;
+  line-height: 3rem;  
   letter-spacing: 0;
   text-transform: initial;
   text-align: center;
@@ -1158,30 +1157,30 @@ header .button {
   color: #333;
   width: 100%;
   font-family: 'Lato', sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
   position: relative;
 }
 
 .ss-social-regular{
     font-family: "SSSocialRegular";
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: #333;
     position: relative;
 }
 
 /*Speakers Breakpoints*/
 
-@media (max-width: 700px) {
+@media (max-width: 43.75rem) {
 
   .speaker-block, .speaker-block:last-child{
     float: none;
     margin: 0 auto;
     width: 46.2%;
-    padding-bottom: 111px;
-    min-width: 270px;
+    padding-bottom: 6.9375rem;
+    min-width: 16.875rem;
   }
 
   .speaker-block:last-child{
@@ -1189,15 +1188,15 @@ header .button {
   }
 
   .speakers h2:first-child{
-    padding-top: 86px;
+    padding-top: 5.375rem;
   }
 
 }
 
-@media(max-width: 415px){  
+@media(max-width: 25.9375rem){  
 
 .speakers h2:first-child {
-    padding-top: 86px;
+    padding-top: 5.375rem;
 }
 
 }
@@ -1210,8 +1209,8 @@ header .button {
 
 .venue-title{
   font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  line-height: 48px;
+  font-size: 1.5rem;
+  line-height: 3rem;
   letter-spacing: 0.3em;
   font-weight: 400;
   color: #333;
@@ -1221,40 +1220,40 @@ header .button {
 .venue .address{
   color: #333;
   font-family: 'Lato', sans-serif;
-  font-size: 24px;
-  line-height: 48px;
-  margin-top: -24px;
-  margin-bottom: 12px;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin-top: -1.5rem;
+  margin-bottom: 0.75rem;
 
 }
 
 .venue .imgcont{
     float: right;
-    width: 900px;
-    height: 900px;
+    width: 56.25rem;
+    height: 56.25rem;
 }
 
 .venue .side-header{
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
 }
 
 .venue-subinfo{
-    padding-top: 131px;
+    padding-top: 8.1875rem;
     float: left;
     width: 25%;
 }
 
 .venue img{
-  width: 1000px;
+  width: 62.5rem;
 }
 
 /*Venue Breakpoints*/
 
-@media(max-width: 864px){
+@media(max-width: 54rem){
 
   .venue .side-header {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     left: 0.4em;
     width: 100%;
     text-align: center;
@@ -1262,14 +1261,14 @@ header .button {
 
   .venue-subinfo{
     float: none;
-    padding-top: 105.92px;
+    padding-top: 6.62rem;
     margin: 0 auto;
     width: 100%;
   }
 
   .venue-subinfo .side-header h2{
     margin-right: 0;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     display: block;
     text-align: center;
     float: none;
@@ -1283,11 +1282,11 @@ header .button {
   }
 
   .venue-subinfo .venue-title{
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
   }
 
   .venue-subinfo .address{
-    padding-bottom: 6px;
+    padding-bottom: 0.375rem;
   }
 
   .venue-subinfo a{
@@ -1303,12 +1302,12 @@ header .button {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 25rem) {
 
 .venue-subinfo .side-header{
-  font-size: 36px;
-  line-height: 68px;
-  margin-bottom: 20px;
+  font-size: 2.25rem;
+  line-height: 4.25rem;
+  margin-bottom: 1.25rem;
   position: relative;
   left: 0.4em;
 }
@@ -1341,14 +1340,14 @@ header .button {
   
   position: absolute;
 
-  height: 128px;
-  width: 80px;
+  height: 8rem;
+  width: 5rem;
   display: block;
   
   top: 50%;
   right: 50%;
-  margin-top: -64px;
-  margin-right: -40px;
+  margin-top: -4rem;
+  margin-right: -2.5rem;
   
 }
 
@@ -1362,7 +1361,7 @@ header .button {
 
 /*Map Breakpoints*/
 
-@media (max-width: 1373px){
+@media (max-width: 85.8125rem){
   .venue .map{
     width: 55%;
     right: -55%;
@@ -1371,7 +1370,7 @@ header .button {
 
 
 
-@media (max-width: 1373px){
+@media (max-width: 85.8125rem){
   .venue .map {
   width: 55%;
   right: -55%;
@@ -1379,7 +1378,7 @@ header .button {
 }
 }
 
-@media (max-width: 1211px){
+@media (max-width: 75.6875rem){
   .venue .map {
   width: 56%;
   right: -56%;
@@ -1387,7 +1386,7 @@ header .button {
 }
 }
 
-@media (max-width: 1051px){
+@media (max-width: 65.6875rem){
   .venue .map {
   width: 57%;
   right: -57%;
@@ -1395,7 +1394,7 @@ header .button {
 }
 }
 
-@media (max-width: 975px){
+@media (max-width: 60.9375rem){
   .venue .map {
   width: 60%;
   right: -60%;
@@ -1403,7 +1402,7 @@ header .button {
 }
 }
 
-@media (max-width: 864px){
+@media (max-width: 54rem){
     .venue .map {
   display: none;
   }
@@ -1414,17 +1413,17 @@ header .button {
 
   .mobile-button{
     display: block;
-    width: 257px;
+    width: 16.0625rem;
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 12px;
-    line-height: 24px;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
     font-weight: 700;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     display: block;
     background-color: #2d323e;
-    padding: 26px;
+    padding: 1.625rem;
     list-style-type: none;
     position: relative;
     color: white;
@@ -1438,29 +1437,29 @@ header .button {
 
 .news{
   background-color: #f2f2f2;
-  padding-bottom: 167px;
+  padding-bottom: 10.4375rem;
 }
 
 .news .button{
   float: right;
-  margin-top: 154px;
-  margin-bottom: 39px;
+  margin-top: 9.625rem;
+  margin-bottom: 2.4375rem;
 }
 
 .news h2{
-  margin-top: 144px;
+  margin-top: 9rem;
   display: inline-block;
 }
 
 /*News Breakpoints*/
 
-@media(max-width: 892px){
+@media(max-width: 55.75rem){
 
   .blogwrap-title{
     width: 100%;
-    margin-top: 105.92px;
+    margin-top: 6.62rem;
     text-align: center;
-    margin-bottom: 39px;
+    margin-bottom: 2.4375rem;
   }
 
   .news h2{
@@ -1476,23 +1475,23 @@ header .button {
 
 }
 
-@media(max-width: 634px){
+@media(max-width: 39.625rem){
   .news h2{
-    line-height: 64px;
+    line-height: 4rem;
   }
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
   .news h2 {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   position: relative;
   left: 0.4em;
-  line-height: 64px;
+  line-height: 4rem;
 }
 
 .news img{
 
-  margin-top: 50px;
+  margin-top: 3.125rem;
 
 }
 
@@ -1502,82 +1501,82 @@ header .button {
 
 .our-partners h2{
   text-align: center;
-  padding-top: 86px;
-  padding-bottom: 94px;
+  padding-top: 5.375rem;
+  padding-bottom: 5.875rem;
   position: relative;
   left: 0.4em;
 }
 
 .partner-img{
   text-align: center;
-  padding-bottom: 230px;
+  padding-bottom: 14.375rem;
 }
 
 .first-logo{
-  width: 192px;
-  margin-right: 217px;
+  width: 12rem;
+  margin-right: 13.5625rem;
   display: inline-block;
 }
 
 .second-logo{
-  width: 264px;
+  width: 16.5rem;
   position: relative;
-  top: 18px;
+  top: 1.125rem;
   display: inline-block;
 }
 
 /*Our Partners Breakpoints*/
 
-@media(max-width: 743px){
+@media(max-width: 46.4375rem){
 
   .our-partners h2{
-    padding-bottom: 34px;
+    padding-bottom: 2.125rem;
   }
 .first-logo {
-    margin-top: 60px;
-    width: 192px;
+    margin-top: 3.75rem;
+    width: 12rem;
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 3.1875rem;
 }
 
 .second-logo {
-    width: 264px;
+    width: 16.5rem;
     margin: 0 auto;
     display: block;
 }
 
 }
 
-@media(max-width: 653px){
+@media(max-width: 40.8125rem){
 
   .our-partners h2{
-    padding-bottom: 34px;
+    padding-bottom: 2.125rem;
   }
   .first-logo {
-    width: 192px;
+    width: 12rem;
     display: block;
-    padding-bottom: 50px;
+    padding-bottom: 3.125rem;
     margin: 0 auto;
-    margin-bottom: 51px;
-    margin-top: 60px;
+    margin-bottom: 3.1875rem;
+    margin-top: 3.75rem;
 }
 
   .second-logo {
-    width: 264px;
+    width: 16.5rem;
     margin: 0 auto;
     display: block;
 }
 
 }
 
-@media (max-width: 587px){
+@media (max-width: 36.6875rem){
   .first-logo {
-    margin-top: 60px;
+    margin-top: 3.75rem;
     display: block;
     margin: 0 auto;
-    margin-bottom: 51px;
+    margin-bottom: 3.1875rem;
   }
   .second-logo {
     display: block;
@@ -1585,26 +1584,26 @@ header .button {
   }
 
   .our-partners h2{
-    padding-bottom: 34px;
+    padding-bottom: 2.125rem;
   }
 
   .partner-img{
-    padding-bottom: 140px;
+    padding-bottom: 8.75rem;
   }
 }
 
-@media(max-width: 488px){
+@media(max-width: 30.5rem){
   .our-partners h2{
-    line-height: 64px;
+    line-height: 4rem;
   }
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
 
   .our-partners h2 {
-    padding-bottom: 22px;
+    padding-bottom: 1.375rem;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 4.25rem;
     position: relative;
     left: 0.4em;
 }
@@ -1615,11 +1614,11 @@ header .button {
 
 .subscribe{
   background-color: #2d323e;
-  border-bottom: 1px solid #393c44;
+  border-bottom: 0.0625rem solid #393c44;
 }
 
 .subscribe h2{
-  padding-top: 148px;
+  padding-top: 9.25rem;
   color: #fff;
   text-align: center;
   position: relative;
@@ -1627,7 +1626,7 @@ header .button {
   }
 
 .subscribe p{
-  max-width: 546px;
+  max-width: 34.125rem;
   color: #fff;
   margin: 0 auto;
   text-align: center;
@@ -1635,27 +1634,27 @@ header .button {
 
 /*Email Subscribe Breakpoints*/
 
-@media(max-width: 515px){
+@media(max-width: 32.1875rem){
   .subscribe h2{
-    padding-top: 68px;
+    padding-top: 4.25rem;
   }
 }
 
-@media(max-width: 496px){
+@media(max-width: 31rem){
   .subscribe h2{
-    line-height: 64px;}
+    line-height: 4rem;}
 }
 
-@media(max-width: 415px){
+@media(max-width: 25.9375rem){
 
   .subscribe h2{
-    padding-top: 68px;
+    padding-top: 4.25rem;
     position: relative;
     left: 0.4em;
 }
 
 .subscribe p {
-    max-width: 546px;
+    max-width: 34.125rem;
   }
 
 }
@@ -1664,7 +1663,7 @@ header .button {
 
 .subscribe form{
   text-align: center;
-  max-width: 546px;
+  max-width: 34.125rem;
   margin: 0 auto;
 }
 
@@ -1675,28 +1674,28 @@ header .button {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 48px;
-  padding: 48px;
-  font-size: 32px;
+  margin-top: 3rem;
+  padding: 3rem;
+  font-size: 2rem;
   text-align: center;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  margin-bottom: 118px;
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 7.375rem;
 }
 
 .subscribe form input:active{
-  border-bottom: 1px solid rgba(255, 255, 255, 1);
+  border-bottom: 0.0625rem solid rgba(255, 255, 255, 1);
 }
 
 .subscribe form input:focus{
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 0.0625rem solid white;
 }
 
 /*Mozilla Firefox Hack for the form to have padding*/
 @-moz-document url-prefix() {
 .subscribe form input{
 
-  margin-top: 48px!important;
+  margin-top: 3rem!important;
   padding: 0!important;
 }
 
@@ -1715,20 +1714,20 @@ header .button {
 @media (max-width: 320px) {
   
   .subscribe form input {
-    width: 343px;
+    width: 21.4375rem;
     border: 0;
     background-color: #2d323e;
     font-family: 'Lato', sans-serif;
     font-weight: 300;
     color: rgba(255, 255, 255, 0.5);
-    padding: 48px;
-    font-size: 32px;
+    padding: 3rem;
+    font-size: 2rem;
     text-align: center;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-    margin-bottom: 118px;
-    padding-right: 25px;
+    border-bottom: 0.0625rem solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 7.375rem;
+    padding-right: 1.5625rem;
     position: relative;
-    left: -46px;
+    left: -2.875rem;
 }
 }
 
@@ -1739,13 +1738,13 @@ footer{
 }
 
 footer img{
-  width: 90px;
+  width: 5.625rem;
 }
 
 footer h2{
   font-family: 'Lato', sans-serif;
-  font-size: 12px;
-  line-height: 24px;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
   color: white;
   letter-spacing: 0.8em;
   text-align: center;
@@ -1755,15 +1754,15 @@ footer h2{
 .verb-logo{
     display: block;
     text-align: center;
-    padding-bottom: 34px;
+    padding-bottom: 2.125rem;
 
 }
 
 /*Footer Breakpoints*/
 
-@media (max-width: 320px) {
+@media (max-width: 20rem) {
   footer h2{
-  font-size: 10px;
+  font-size: 0.625rem;
 }
 }
 
@@ -1789,7 +1788,7 @@ invalid {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1797,8 +1796,8 @@ invalid {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  padding: 48px;
-  font-size: 32px;
+  padding: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1806,8 +1805,8 @@ invalid {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  padding: 48px;
-  font-size: 32px;
+  padding: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1815,8 +1814,8 @@ invalid {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  padding: 48px;
-  font-size: 32px;
+  padding: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1824,9 +1823,9 @@ input::-moz-placeholder {
   font-family: 'Lato', sans-serif;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.5);
-  padding-bottom: 20px;
-  margin-top: 48px;
-  font-size: 32px;
+  padding-bottom: 1.25rem;
+  margin-top: 3rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -1844,7 +1843,7 @@ header .strip-parent {
   left: 6%;
   z-index: 12;
   float: left;
-  max-width: 400px;
+  max-width: 25rem;
 }
 
 header .strip-parent > .strip { 
@@ -1856,7 +1855,7 @@ header .strip-parent > .strip {
   -webkit-transform: skew(20deg);
       -ms-transform: skew(20deg);
           transform: skew(20deg);
-  width: 600px ; 
+  width: 37.5rem ; 
 }
 header .strip-parent > .strip > .bg-img {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#282d38+0,7db9e8+100&1+0,0+100 */ /* FF3.6+ */ /* Chrome,Safari4+ */ /* Chrome10+,Safari5.1+ */ /* Opera 11.10+ */ /* IE10+ */
@@ -1864,7 +1863,7 @@ header .strip-parent > .strip > .bg-img {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282d38', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
   color: #fff;
   height: 100%;
-  left: -109.5px;
+  left: -6.84375rem;
   position: absolute;
   text-align: center;
   -webkit-transform: skew(-20deg);
@@ -1876,7 +1875,7 @@ header .strip-parent > .strip > .bg-img {
 /*Venue Background Strip*/
 
 .venue{
-  padding-bottom: 165px;
+  padding-bottom: 10.3125rem;
   position: relative;
   background-color: aliceblue; /*This is a temporary background colour*/
 }
@@ -1897,7 +1896,7 @@ header .strip-parent > .strip > .bg-img {
   left: 6%;
   z-index: 12;
   float: left;
-  max-width: 400px;
+  max-width: 25rem;
 }
 .venue .bg-strip .strip-parent > .strip { 
   background: rgba(0,0,0,0);
@@ -1908,15 +1907,15 @@ header .strip-parent > .strip > .bg-img {
   -webkit-transform: skew(20deg);
       -ms-transform: skew(20deg);
           transform: skew(20deg);
-  width: 600px ; 
+  width: 37.5rem ; 
 }
 .venue .bg-strip .strip-parent > .strip > .bg-img {
   background: url(../img/south-bank.jpg) no-repeat center center fixed;
-  box-shadow: inset 11px 13px 27px -21px rgba(0,0,0,0.75);
+  box-shadow: inset 0.6875rem 0.8125rem 1.6875rem -1.3125rem rgba(0,0,0,0.75);
   background-size: cover;
   color: #fff;
   height: 100%;
-  left: -109.5px;
+  left: -6.84375rem;
   position: absolute;
   text-align: center;
   -webkit-transform: skew(-20deg);
@@ -1930,14 +1929,14 @@ header .strip-parent > .strip > .bg-img {
 .morph-button-modal.open .morph-content{
   background-color: #2d323e;
   color: #fff;
-  width: 450px;
+  width: 28.125rem;
   z-index: 9999;
 }
 
 .morph-button-modal-2.open .morph-content {
-    width: 450px;
-    height: 720px;
-    margin: -360px 0 0 -220px;
+    width: 28.125rem;
+    height: 45rem;
+    margin: -22.5rem 0 0 -13.75rem;
 }
 
 .morph-button-fixed.active > button {
@@ -1945,57 +1944,57 @@ header .strip-parent > .strip > .bg-img {
 }
 
 .content-style-form form{
-    max-width: 450px;
+    max-width: 28.125rem;
     margin: 0 auto;
     background-color: #2d323e;
 }
 
 .content-style-form textarea, input {
     outline: none;
-    border: 2px solid #6c7078;
+    border: 0.125rem solid #6c7078;
     background-color: #2d323e;
     display: block;
     width: 80%;
-    height: 60px;
+    height: 3.75rem;
     margin: 0 auto;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
 }
 
 .content-style-form input{
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   font-family: lato, sans-serif;
   font-weight: 400;
-  padding: 12px;
-  margin-bottom: 28px;
+  padding: 0.75rem;
+  margin-bottom: 1.75rem;
 }
 
 .content-style-form input[name="job"]{
-  margin-bottom: 38px;
+  margin-bottom: 2.375rem;
 }
 
 .content-style-form label{
-  width:361px;
+  width:22.5625rem;
   display: block;
   text-align: left;
   margin: 0 auto;
   font-family: lato, sans-serif;
   font-weight: 400;
-  font-size: 12px; 
+  font-size: 0.75rem; 
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 0.75rem;
 }
 
 .content-style-form input[type="submit"]{
   text-transform: uppercase;
   font-family: 'Playfair Display', serif;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: #2d323e;
   background-color: #fff;
   letter-spacing: 0.8em;
   /*text-align: 0.4em;*/
   font-weight: 700;
-  height: 62px;
+  height: 3.875rem;
   border: 0;
   cursor: pointer;
   }
@@ -2003,8 +2002,8 @@ header .strip-parent > .strip > .bg-img {
 .content-style-form span {
     display: block;
     position: absolute;
-    left: 420px;
-    top: 12px;
+    left: 26.25rem;
+    top: 0.75rem;
     cursor: pointer;
     padding-right: 1rem;
 }
@@ -2015,25 +2014,25 @@ header .strip-parent > .strip > .bg-img {
 
 .content-style-form input::-webkit-input-placeholder {
   color: #fff;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
 }
 
  .content-style-form input:-moz-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 1rem;
   text-align: left;
  }
 
 .content-style-form h3{
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 400;
     letter-spacing: 0.8em;
     text-indent: 0.4em;
     text-transform: uppercase;
-    margin-top: 70px;
-    margin-bottom: 44px
+    margin-top: 4.375rem;
+    margin-bottom: 2.75rem
 }
