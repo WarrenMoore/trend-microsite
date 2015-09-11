@@ -517,7 +517,7 @@ display: none;
 .nav-block-1 > a >img{
     width: 121px;
     margin: 21px 0;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 .nav-block-2{
   width: 44.089834516%;
@@ -1534,6 +1534,7 @@ header .button {
     padding-bottom: 34px;
   }
 .first-logo {
+    margin-top: 60px;
     width: 192px;
     display: block;
     padding-bottom: 50px;
@@ -1560,6 +1561,7 @@ header .button {
     padding-bottom: 50px;
     margin: 0 auto;
     margin-bottom: 51px;
+    margin-top: 60px;
 }
 
   .second-logo {
@@ -1572,6 +1574,7 @@ header .button {
 
 @media (max-width: 587px){
   .first-logo {
+    margin-top: 60px;
     display: block;
     margin: 0 auto;
     margin-bottom: 51px;
