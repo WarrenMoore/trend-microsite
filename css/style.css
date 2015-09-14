@@ -433,6 +433,10 @@ display: none;
   width: 1.25rem;
 }
 
+.nav-block-2 .invite-popup {
+  display: none
+}
+
 }
 
 @media (max-width: 43.75rem) {
