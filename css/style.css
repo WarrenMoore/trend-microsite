@@ -1097,11 +1097,12 @@ header .button {
 .circle-3{
   width: 100%;
   height: 0;
-  background-image: url(../img/full/layer16.png);
+  background-image: url(../img/unknown5.png);
   border-radius: 50rem;
   padding-bottom: 100%;
   background-position: center;
   background-size: cover;
+  background-position: 49% 28%;
   box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
 
