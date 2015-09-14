@@ -55,6 +55,13 @@
  * Register popup
  */
 
+var inviteButton = $('.invite-popup .button');
+
+inviteButton.magnificPopup({
+  type: 'inline',
+  mainClass: 'mfp-fade'
+});
+
   
 
   /*

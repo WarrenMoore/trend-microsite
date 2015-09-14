@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="vendor/magnific-popup/jquery.magnific-popup.css">
+	<link rel="stylesheet" href="vendor/magnific-popup/magnific-popup.css">
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
@@ -97,28 +97,40 @@
 </p>
 <p>Join us for an evening of insightful discussion about how brands can bring luxury back to the digital retail experience.
 </p>
-			<div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
-				<button id="main" class="button" type="button">Request an Invite</button>
-				<div class="morph-content">
-					<div>
-						<div class="content-style-form content-style-form-1">
-							<span class="icon icon-close"><img src="img/close.png"/></span>
-							<form>
-								<h3>Request an Invite</h3>
-					<label for="Name">Name</label>
-		        <input type="text" name="first">
-		        	<label for="Email">Email</label>
-		        <input type="email" name="email">
-		        	<label for="company">company</label>
-		        <input type="text" name="company">
-		        	<label for="job title">job title</label>
-		        <input type="text" name="job">
-		        <input disabled type="submit" value="send request" name="sub">
-		        </form>
+				
+
+			<div class="invite-popup">
+				<button id="main" data-mfp-src=".popup-content" class="button" type="button">Request an Invite</button>
+
+				<div class="popup-content content-style-form content-style-form-1 mfp-hide">
+					<span class="mfp-close"><img src="img/close.png"/></span>
+					<form>
+						<div class="group">
+							<h3>Request an Invite</h3>
 						</div>
-					</div>
+
+						<div class="group">
+							<label for="Name">Name</label><input type="text" name="first">
+						</div>
+
+						<div class="group">
+							<label for="Email">Email</label><input type="email" name="email">
+						</div>
+
+						<div class="group">
+							<label for="company">company</label><input type="text" name="company">
+						</div>
+
+						<div class="group">
+							<label for="job title">job title</label><input type="text" name="job">
+						</div>
+						
+						<div class="group">
+							<input disabled type="submit" value="send request" name="sub">
+						</div>
+			        </form>
 				</div>
-			</div><!-- morph-button -->
+			</div>
 
 				
 				<section class="accordion round-border">
