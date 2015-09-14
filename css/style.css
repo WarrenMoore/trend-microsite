@@ -145,104 +145,6 @@ h2{
 
 
 
-/* overlay at start */
-.mfp-fade.mfp-bg {
-  opacity: 0;
-
-  -webkit-transition: all 0.2s ease-out;
-  -moz-transition: all 0.2s ease-out;
-  transition: all 0.2s ease-out;
-}
-
-
-/* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready {
-  opacity: 0.6;
-}
-
-/* overlay animate out */
-.mfp-fade.mfp-bg.mfp-removing {
-  opacity: 0;
-}
-
-/* content at start */
-.mfp-fade.mfp-wrap .mfp-content {
-  opacity: 0;
-
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.mfp-fade.mfp-wrap .mfp-content .group {
-  transition: opacity 0.5s, transform 0.5s;
-  transform: translate(0, 90px);
-
-  opacity: 0;
-}
-
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(1) { transition-delay: 0.25s; }
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(2) { transition-delay: 0.30s; }
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(3) { transition-delay: 0.35s; }
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(4) { transition-delay: 0.40s; }
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(5) { transition-delay: 0.45s; }
-.mfp-fade.mfp-wrap .mfp-content .group:nth-child(6) { transition-delay: 0.50s; }
-
-/* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
-  opacity: 1;
-}
-
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content .group {
-  transform: translate(0, 0);
-  opacity: 1;
-}
-
-/* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
-  opacity: 0;
-}
-
-
-
-/* 
- * Mobile 'Request an invite' morph styles
- */
-
-@media screen and (max-width: 600px) {
-   /* .morph-button.morph-button-modal.morph-button-modal-2.morph-button-fixed {
-      width: 100%;
-    }
-
-    .morph-button-modal-2.open .morph-content {
-      width: 100% !important;
-      margin: 0 !important;
-      top: 0 !important;
-      left: 0 !important;
-    }
-
-    .morph-content .content-style-form span {
-      right: 1rem;
-      left: auto;
-      top: 1rem;
-    }
-
-    .morph-content .content-style-form form {
-      max-width: 95%;
-    }*/
-}
-
-/*@media screen and (max-height: 725px) {
-  .next-event div.morph-button-modal-2.morph-button-modal.open .morph-content {
-    top: 0 !important;
-    margin-top: 0 !important;
-    overflow: scroll;
-    max-height: 100vh;
-  }
-}*/
-
-
-
 /*-----*/
 /* Nav */
 /*-----*/
@@ -264,7 +166,7 @@ h2{
   z-index:9999;
   visibility: hidden;
   opacity: 0;
-  transition: all 500ms ease-out;
+  transition: opacity 500ms ease-out;
 }
 
 #menu.sticky {
@@ -392,7 +294,8 @@ nav li a{
     color: #fff;
     letter-spacing: 0.3em;
     vertical-align: middle;
-    padding-top: 1.0625rem;
+    padding-top: 1.125rem;
+    padding-bottom: 1.125rem;
     display: inline-block;
     height: 100%;
     cursor: pointer;
@@ -712,7 +615,7 @@ header .button {
     margin: 0 auto;
 }
 
-  .logo-title img{
+.logo-title img{
   width: 26.5rem;
   margin: 10vh 0 2.5rem 0;
   text-align: center;
@@ -1157,12 +1060,12 @@ header .button {
 .circle-3{
   width: 100%;
   height: 0;
-  background-image: url(../img/unknown5.png);
+  background-image: url(../img/unknown6.png);
   border-radius: 50rem;
   padding-bottom: 100%;
   background-position: center;
   background-size: cover;
-  background-position: 49% 28%;
+  background-position: 44% 20%;
   box-shadow: inset 0px 0px 0px 0.625rem rgba(255,255,255,0.4);
 }
 
@@ -1982,17 +1885,27 @@ header .strip-parent > .strip > .bg-img {
 
 /*Lightbox*/
 
+
+.mfp-wrap {
+    z-index: 9999999999;
+}
+
 .popup-content {
     max-width: 28.125rem;
     margin: 0 auto;
     background-color: #2d323e;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
     position: relative;
+    box-shadow: 1px 4px 4px 1px rgba(0,0,0,0.5);
 }
 
-.popup-content form > * {
-  display: inline-block;
+body.sticky .popup-content {
+  margin-top: 3rem;
+}
+
+.popup-content form h3, .popup-content .group {
+  display: block;
 }
 
 .content-style-form textarea, input {
@@ -2029,6 +1942,7 @@ header .strip-parent > .strip > .bg-img {
   font-size: 0.75rem; 
   text-transform: uppercase;
   margin-bottom: 0.75rem;
+  color: white;
 }
 
 .content-style-form input[type="submit"]{
@@ -2075,6 +1989,106 @@ header .strip-parent > .strip > .bg-img {
     letter-spacing: 0.8em;
     text-indent: 0.4em;
     text-transform: uppercase;
-    margin-top: 4.375rem;
-    margin-bottom: 2.75rem
+    margin-top: 4rem;
+    margin-bottom: 2.75rem;
+    color: white;
 }
+
+
+
+/* overlay at start */
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.6;
+}
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.mfp-fade.mfp-wrap .mfp-content .group {
+  transition: opacity 0.5s, transform 0.5s;
+  transform: translate(0, 80px);
+
+  opacity: 0;
+}
+
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(1) { transition-delay: 0.15s; }
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(2) { transition-delay: 0.20s; }
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(3) { transition-delay: 0.25s; }
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(4) { transition-delay: 0.30s; }
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(5) { transition-delay: 0.35s; }
+.mfp-fade.mfp-wrap .mfp-content .group:nth-child(6) { transition-delay: 0.40s; }
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+}
+
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content .group {
+  transform: translate(0, 0);
+  opacity: 1;
+}
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+}
+
+
+
+/* 
+ * Mobile 'Request an invite' morph styles
+ */
+
+@media screen and (max-width: 600px) {
+   /* .morph-button.morph-button-modal.morph-button-modal-2.morph-button-fixed {
+      width: 100%;
+    }
+
+    .morph-button-modal-2.open .morph-content {
+      width: 100% !important;
+      margin: 0 !important;
+      top: 0 !important;
+      left: 0 !important;
+    }
+
+    .morph-content .content-style-form span {
+      right: 1rem;
+      left: auto;
+      top: 1rem;
+    }
+
+    .morph-content .content-style-form form {
+      max-width: 95%;
+    }*/
+}
+
+/*@media screen and (max-height: 725px) {
+  .next-event div.morph-button-modal-2.morph-button-modal.open .morph-content {
+    top: 0 !important;
+    margin-top: 0 !important;
+    overflow: scroll;
+    max-height: 100vh;
+  }
+}*/
+

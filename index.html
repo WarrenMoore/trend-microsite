@@ -24,46 +24,47 @@
 </head>
 <body>	
 	<nav role="navigation" class="nav" itemscope itemtype='https://schema.org/SiteNavigationElement'>
+		<section id="menu" class="on-scroll clearfix">
 
-	<section id="menu" class="on-scroll clearfix">
-
-		<div class="wrap">
-			<div class="nav-block-1">
-                <a href="#"><img src="img/small-title-trend.png"></a>
-			</div>
-			<div class="nav-block-2">
-				<a href="#" class="open-login-morph">Request an invite</a>
-			</div>
-			<div class="nav-block-3 ">
-				<div class="navicon closed">
-					<li class="navmenu"><a href="#" class="jump-to-button"><span>Jump To</span><i class="fa fa-navicon"></i></a></li>
+			<div class="wrap">
+				<div class="nav-block-1">
+	                <a href="#"><img src="img/small-title-trend.png"></a>
+				</div>
+				<div class="nav-block-2">
+					<div class="invite-popup">
+						<a href="#" class="button" data-mfp-src=".popup-content">Request an invite</a>
+					</div>
+				</div>
+				<div class="nav-block-3 ">
+					<div class="navicon closed">
+						<li class="navmenu"><a href="#" class="jump-to-button"><span>Jump To</span><i class="fa fa-navicon"></i></a></li>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<div class="wrap">
-	<h2 class="hidden">Main Navigation</h2>
-<!--This is the navigation that is shown with you having to scroll-->
-	<div class="navicon closed clearfix">
-		<div class="navicon closed show"><li class="navmenu">
-			<a href="#" class="jump-to-button">
-				<span>Jump To</span><i class="fa fa-navicon"></i>
-			</a>
-		</li></div>
-	</div>
-<!--        This is what will show in the full screen Nav-->
-		<ul class="navmenu hidden" id="opennav">
-			<li><a href="#intro" class="active">Intro</a></li>
-			<li><a href="#next-event">Next Event</a></li>
-			<li><a href="#why-trend">Why Trend</a></li>
-			<li><a href="#speakers">Speakers</a></li>
-			<li><a href="#the-venue">The Venue</a></li>
-			<li><a href="#latest-news">Latest News</a></li>
-			<li><a href="#our-partners">Our Partners</a></li>
-		</ul>
-	</div>
-</nav>
+		<div class="wrap">
+		<h2 class="hidden">Main Navigation</h2>
+	<!--This is the navigation that is shown with you having to scroll-->
+		<div class="navicon closed clearfix">
+			<div class="navicon closed show"><li class="navmenu">
+				<a href="#" class="jump-to-button">
+					<span>Jump To</span><i class="fa fa-navicon"></i>
+				</a>
+			</li></div>
+		</div>
+	<!--        This is what will show in the full screen Nav-->
+			<ul class="navmenu hidden" id="opennav">
+				<li><a href="#intro" class="active">Intro</a></li>
+				<li><a href="#next-event">Next Event</a></li>
+				<li><a href="#why-trend">Why Trend</a></li>
+				<li><a href="#speakers">Speakers</a></li>
+				<li><a href="#the-venue">The Venue</a></li>
+				<li><a href="#latest-news">Latest News</a></li>
+				<li><a href="#our-partners">Our Partners</a></li>
+			</ul>
+		</div>
+	</nav>
 
 <header class="clearfix" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
 
@@ -105,6 +106,7 @@
 				<div class="popup-content content-style-form content-style-form-1 mfp-hide">
 					<span class="mfp-close"><img src="img/close.png"/></span>
 					<form>
+						<div class="clearfix"></div>
 						<div class="group">
 							<h3>Request an Invite</h3>
 						</div>
@@ -124,10 +126,11 @@
 						<div class="group">
 							<label for="job title">job title</label><input type="text" name="job">
 						</div>
-						
+
 						<div class="group">
 							<input disabled type="submit" value="send request" name="sub">
 						</div>
+						<div class="clearfix"></div>
 			        </form>
 				</div>
 			</div>
@@ -192,7 +195,7 @@
 				</div>
 				<div class="speaker-block">
 					<div class="circle-3"></div>
-					<h2>TBA</h2>
+					<h2>To Be Announced</h2>
 					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
 	            	<li><a class="twitter-pos" href="#" target="_blank"><i class="fa fa-twitter"></i>
 </a></li>

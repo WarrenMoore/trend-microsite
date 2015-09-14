@@ -2,7 +2,8 @@
 (function($) { 
   $(document).ready(function(){
 
-    var $trigger = $('#main'),
+    var $body = $('body'),
+        $trigger = $('#main'),
         $menu = $('#menu');
         $window = $(window),
         stickyactive = false, 
@@ -13,13 +14,15 @@
 
        if ($window.scrollTop() > triggeroffset && !stickyactive) {
           $menu.addClass('sticky');
+          $body.addClass('sticky');
           stickyactive = true;
           return;
        }
        if($window.scrollTop() < triggeroffset && stickyactive){
-                  $menu.removeClass('sticky');
-                  stickyactive = false;
-                  return;
+          $menu.removeClass('sticky');
+          $body.removeClass('sticky');
+          stickyactive = false;
+          return;
        }
     });
 
@@ -55,11 +58,22 @@
  * Register popup
  */
 
-var inviteButton = $('.invite-popup .button');
+var inviteButton = $('.invite-popup .button'),
+    $body = $('body');
 
 inviteButton.magnificPopup({
   type: 'inline',
-  mainClass: 'mfp-fade'
+  mainClass: 'mfp-fade',
+
+  callbacks: {
+    open: function() {
+      $body.addClass('invite-open');
+    },
+
+    close: function() {
+      $body.removeClass('invite-open');
+    }
+  }
 });
 
   
