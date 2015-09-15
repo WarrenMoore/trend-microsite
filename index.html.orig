@@ -21,14 +21,16 @@
 	<link rel="stylesheet" href="css/style.css">
 	<script src="js/jquery-2.1.4.min.js"></script>
 	<script src="js/jquery-ui.min.js"></script>
+<<<<<<< HEAD
+=======
 	<script src="morph/js/classie.js"></script>
 	<script src="morph/js/uiMorphingButton_inflow.js"></script>
 	<script src="js/menu.js"></script>
 
+>>>>>>> 365f8c8873fadf24b14801e267e039b88523f48b
 </head>
 <body>	
 	<nav role="navigation" class="nav" itemscope itemtype='https://schema.org/SiteNavigationElement'>
-
 		<section id="menu" class="on-scroll clearfix">
 
 			<div class="wrap">
@@ -48,6 +50,7 @@
 			</div>
 		</section>
 
+<<<<<<< HEAD
 		<div class="wrap">
 		<h2 class="hidden">Main Navigation</h2>
 	<!--This is the navigation that is shown with you having to scroll-->
@@ -59,9 +62,7 @@
 			</li></div>
 		</div>
 	<!--        This is what will show in the full screen Nav-->
-		<div class="navmenu-outer">
-			<div class="navmenu-container">
-				<ul id="opennav" class="navmenu">
+			<ul class="navmenu hidden" id="opennav">
 				<li><a href="#intro" class="active">Intro</a></li>
 				<li><a href="#next-event">Next Event</a></li>
 				<li><a href="#why-trend">Why Trend</a></li>
@@ -70,10 +71,36 @@
 				<li><a href="#latest-news">Latest News</a></li>
 				<li><a href="#our-partners">Our Partners</a></li>
 			</ul>
-			</div>
-		</div>
 		</div>
 	</nav>
+=======
+	<div class="wrap">
+	<h2 class="hidden">Main Navigation</h2>
+<!--This is the navigation that is shown with you having to scroll-->
+	<div class="navicon closed clearfix">
+		<div class="navicon closed show"><li class="navmenu">
+			<a href="#" class="jump-to-button">
+				<span>Jump To</span><i class="fa fa-navicon"></i>
+			</a>
+		</li></div>
+	</div>
+<!--        This is what will show in the full screen Nav-->
+		<div class="navmenu-outer">
+			<div class="navmenu-container">
+				<ul id="opennav" class="navmenu">
+					<li><a href="#intro" class="active">Intro</a></li>
+					<li><a href="#next-event">Next Event</a></li>
+					<li><a href="#why-trend">Why Trend</a></li>
+					<li><a href="#speakers">Speakers</a></li>
+					<li><a href="#the-venue">The Venue</a></li>
+					<li><a href="#latest-news">Latest News</a></li>
+					<li><a href="#our-partners">Our Partners</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</nav>
+>>>>>>> 365f8c8873fadf24b14801e267e039b88523f48b
 
 <header class="clearfix" role='banner' itemscope itemtype='https://schema.org/WPHeader'>
 
@@ -143,7 +170,6 @@
 			        </form>
 				</div>
 			</div>
-			</div><!-- morph-button -->
 
 				
 				<section class="accordion round-border">
