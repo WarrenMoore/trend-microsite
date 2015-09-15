@@ -203,7 +203,7 @@ h2{
   transition: all 500ms ease-out;
 }
 
-#menu.sticky {
+#menu.sticky, html.show-menu #menu {
   position: fixed;
   visibility: visible;
   top:0;
@@ -382,8 +382,8 @@ nav li a{
 
 html.show-menu, html.show-menu body { overflow: hidden; }
 
-.navmenu-outer { background: rgba(232, 170, 151, 0.98); color: #fff; font-size: 3em; font-weight: 100; height: 100%; left: 0; line-height: 1.5em; opacity: 0; position: fixed; top: 0; transition: opacity 0.4s linear, z-index 0.4s step-end; -moz-transition: opacity 0.4s linear, z-index 0.4s step-end; -o-transition: opacity 0.4s linear, z-index 0.4s step-end; -webkit-transition: opacity 0.4s linear, z-index 0.4s step-end; width: 100%; z-index: -1; }
-html.show-menu .navmenu-outer { opacity: 1; transition: opacity 0.4s linear, z-index 0.4s step-start; -moz-transition: opacity 0.4s linear, z-index 0.4s step-start; -o-transition: opacity 0.4s linear, z-index 0.4s step-start; -webkit-transition: opacity 0.4s linear, z-index 0.4s step-start; z-index: 1000; }
+.navmenu-outer { background: rgba(0, 0, 0, 0.95); color: #fff; font-size: 3em; font-weight: 100; height: 100%; left: 0; line-height: 1.5em; opacity: 0; position: fixed; top: 0; transition: opacity 0.4s linear, z-index 0.4s step-end; -moz-transition: opacity 0.4s linear, z-index 0.4s step-end; -o-transition: opacity 0.4s linear, z-index 0.4s step-end; -webkit-transition: opacity 0.4s linear, z-index 0.4s step-end; width: 100%; z-index: -1; }
+html.show-menu .navmenu-outer { opacity: 1; transition: opacity 0.4s linear, z-index 0.4s step-start; -moz-transition: opacity 0.4s linear, z-index 0.4s step-start; -o-transition: opacity 0.4s linear, z-index 0.4s step-start; -webkit-transition: opacity 0.4s linear, z-index 0.4s step-start; z-index: 9000; }
 
 .navmenu-container { font-size: 1rem; font-weight: 400; line-height: 1.5em; margin: 0 auto; max-width: 1175px; padding: 0 20px; position: relative; }
 #navmenu { width: 48%; }
@@ -396,7 +396,7 @@ html.show-menu .navmenu-outer { opacity: 1; transition: opacity 0.4s linear, z-i
 .navmenu a:hover { text-decoration: none; }
 
 #navmenu { text-align: center; width: 100%; }
-.navmenu-container { font-size: 24px !important; height: calc(100% - 72px); overflow: scroll; padding: 0; }
+.navmenu-container { font-size: 24px !important; height: calc(100% - 75px); overflow: scroll; padding: 0; top: 75px; }
 .navmenu li { padding: 0.5em 20px; position: relative; }
 
 /*Nav Breakpoints*/
