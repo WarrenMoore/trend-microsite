@@ -2,7 +2,8 @@
 (function($) { 
   $(document).ready(function(){
 
-    var $trigger = $('#main'),
+    var $body = $('body'),
+        $trigger = $('#main'),
         $menu = $('#menu');
         $window = $(window),
         stickyactive = false, 
@@ -13,13 +14,15 @@
 
        if ($window.scrollTop() > triggeroffset && !stickyactive) {
           $menu.addClass('sticky');
+          $body.addClass('sticky');
           stickyactive = true;
           return;
        }
        if($window.scrollTop() < triggeroffset && stickyactive){
-                  $menu.removeClass('sticky');
-                  stickyactive = false;
-                  return;
+          $menu.removeClass('sticky');
+          $body.removeClass('sticky');
+          stickyactive = false;
+          return;
        }
     });
 
@@ -52,75 +55,32 @@
    }); 
 
 /*
- * Morph button code
+ * Register popup
  */
 
-   /* Invite button */
-  var docElem = window.document.documentElement, didScroll, scrollPosition;
+var inviteButton = $('.invite-popup .button'),
+    $body = $('body');
 
-  // trick to prevent scrolling when opening/closing button
-  function noScrollFn() {
-    window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
-  }
+inviteButton.magnificPopup({
+  type: 'inline',
+  mainClass: 'mfp-fade',
 
-  function noScroll() {
-    window.removeEventListener( 'scroll', scrollHandler );
-    window.addEventListener( 'scroll', noScrollFn );
-  }
+  callbacks: {
+    open: function() {
+      $body.addClass('invite-open');
+    },
 
-  function scrollFn() {
-    window.addEventListener( 'scroll', scrollHandler );
-  }
-
-  function canScroll() {
-    window.removeEventListener( 'scroll', noScrollFn );
-    scrollFn();
-  }
-
-  function scrollHandler() {
-    if( !didScroll ) {
-      didScroll = true;
-      setTimeout( function() { scrollPage(); }, 60 );
+    close: function() {
+      $body.removeClass('invite-open');
     }
-  };
+  }
+});
 
-  function scrollPage() {
-    scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
-    didScroll = false;
-  };
+  
 
-  scrollFn();
-
-  [].slice.call( document.querySelectorAll( '.morph-button, .nate' )).forEach( function( bttn ) {
-    morphingButton = new UIMorphingButton( bttn, {
-      closeEl : '.icon-close',
-      onBeforeOpen : function() {
-        // don't allow to scroll
-        noScroll();
-      },
-      onAfterOpen : function() {
-        // can scroll again
-        canScroll();
-      },
-      onBeforeClose : function() {
-        // don't allow to scroll
-        noScroll();
-      },
-      onAfterClose : function() {
-        // can scroll again
-        canScroll();
-      }
-    } );
-  } );
-
-  morphButton = $('.morph-button');
-
-  $('.open-login-morph').on('click', function(e) {
-      morphingButton.toggle();
-      e.preventDefault();
-  });
-
-
+  /*
+   * Jump to
+   */
 
   var jumpTo = $('.jump-to'),
       jumpToButton = $('.jump-to-button'),
