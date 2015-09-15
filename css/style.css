@@ -1329,6 +1329,148 @@ header .button {
 
 /*Map Breakpoints*/
 
+/*Map Pin Breakpoints*/
+
+@media (min-width: 2326px){
+      .venue .map {
+  display: none;
+  }
+
+  .venue-subinfo .button{
+    display: none;
+  }
+
+  .mobile-button{
+    display: block;
+    width: 16.0625rem;
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 0.75rem;
+    line-height: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    display: block;
+    background-color: #2d323e;
+    padding: 1.625rem;
+    list-style-type: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+
+
+@media (max-width: 2325px){
+  .venue .map::after {
+    top: 48%;
+    right: 62%;
+}
+}
+
+@media (max-width: 2325px){
+  .venue .map::after {
+    top: 48%;
+    right: 62%;
+}
+}
+
+@media (max-width: 2184px){
+  .venue .map::after {
+    top: 46%;
+    right: 62%;
+}
+}
+
+@media (max-width: 2104px){
+  .venue .map::after {
+    top: 43%;
+    right: 62%;
+}
+}
+
+@media (max-width: 1850px){
+  .venue .map::after {
+    top: 43%;
+    right: 59%;
+}
+}
+
+@media (max-width: 1828px){
+  .venue .map::after {
+    top: 43%;
+    right: 58%;
+}
+}
+
+@media (max-width: 1673px){
+  .venue .map::after {
+    top: 42%;
+    right: 54%;
+}
+}
+
+@media (max-width: 1551px){
+  .venue .map::after {
+    top: 42%;
+    right: 50%;
+}
+}
+
+@media (max-width: 1429px){
+  .venue .map::after {
+    top: 42%;
+    right: 46%;
+}
+}
+
+@media (max-width: 1230px){
+  .venue .map::after {
+    top: 42%;
+    right: 42%;
+}
+}
+
+@media (max-width: 1130px){
+  .venue .map::after {
+    top: 43%;
+    right: 38%;
+}
+}
+
+@media (max-width: 1023px){
+  .venue .map::after {
+    top: 45%;
+    right: 32%;
+}
+}
+
+@media (max-width: 883px){
+  .venue .map::after {
+    top: 43%;
+    right: 28%;
+}
+}
+
+@media (max-width: 874px){
+  .venue .map::after {
+     top: 43%;
+    right: 25%;
+}
+}
+
+
+/*Whole Map Breakpoints*/
+
+@media (max-width: 85.8125rem){
+  .venue .map{
+    width: 55%;
+    right: -55%;
+  }
+}
+
+
 @media (max-width: 85.8125rem){
   .venue .map{
     width: 55%;
